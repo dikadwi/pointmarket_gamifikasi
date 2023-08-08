@@ -1,0 +1,1504 @@
+INFO - 2023-08-08 04:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:30:39 --> Invalid data at path "/img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:35:00 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-08 04:35:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:36:25 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 170.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-08 04:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:36:26 --> Invalid data at path "/public/img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:37:01 --> Invalid data at path "/public/img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:37:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:37:20 --> Invalid data at path "../img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:37:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:37:48 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllers/img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:38:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:38:10 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllers./img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:42:00 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllers"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:42:38 --> Path cannot be empty
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 23.
+ 1 VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php(23): file_get_contents('')
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 4 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 5 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:42:53 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllers\img\parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:43:14 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllers\img\parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:43:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:43:53 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllersparkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:46:59 --> Invalid data at path "C:\xampp\htdocs\parkir\app\Controllers/../public/img/parkir.png"
+in VENDORPATH\endroid\qr-code\src\ImageData\LogoImageData.php on line 26.
+ 1 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(125): Endroid\QrCode\ImageData\LogoImageData::createForLogo(Object(Endroid\QrCode\Logo\Logo))
+ 2 VENDORPATH\endroid\qr-code\src\Writer\AbstractGdWriter.php(113): Endroid\QrCode\Writer\AbstractGdWriter->addLogo(Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Writer\Result\GdResult))
+ 3 VENDORPATH\endroid\qr-code\src\Writer\PngWriter.php(25): Endroid\QrCode\Writer\AbstractGdWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label), [...])
+ 4 APPPATH\Controllers\Home.php(64): Endroid\QrCode\Writer\PngWriter->write(Object(Endroid\QrCode\QrCode), Object(Endroid\QrCode\Logo\Logo), Object(Endroid\QrCode\Label\Label))
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 04:49:32 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `kontak`...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kontak`...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kontak`...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `kontak`...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\parkir\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\parkir\system\BaseModel.php(690): CodeIgniter\Model->update(1691470172, Array)
+#8 C:\xampp\htdocs\parkir\app\Controllers\Home.php(75): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Home->save()
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-08-08 04:49:32 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `kontak` SET `id_kontak` = 1691470172, `nama` = \'\', `ponsel` = \'\', `email` = \'\', `organisasi` = \'\', `updated_at` = \'2023-08-08 04:49:32\'
+WHERE `kontak`.`id_kontak` IN (1691470172)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `kontak` SET `id_kontak` = 1691470172, `nama` = \'\', `ponsel` = \'\', `email` = \'\', `organisasi` = \'\', `updated_at` = \'2023-08-08 04:49:32\'
+WHERE `kontak`.`id_kontak` IN (1691470172)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `kontak` SET `id_kontak` = 1691470172, `nama` = \'\', `ponsel` = \'\', `email` = \'\', `organisasi` = \'\', `updated_at` = \'2023-08-08 04:49:32\'
+WHERE `kontak`.`id_kontak` IN (1691470172)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `kontak` SET `id_kontak` = :id_kontak:, `nama` = :nama:, `ponsel` = :ponsel:, `email` = :email:, `organisasi` = :organisasi:, `updated_at` = :updated_at:
+WHERE `kontak`.`id_kontak` IN :kontak.id_kontak:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update(1691470172, [...])
+ 9 APPPATH\Controllers\Home.php(75): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 04:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:50:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:50:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:55:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:56:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 04:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 04:59:44 --> Attempt to read property "qr_code" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 28.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "qr_code" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:01:16 --> Attempt to read property "nama" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:03:23 --> syntax error, unexpected token "=", expecting "]"
+in APPPATH\Controllers\Admin.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\parkir\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:03:34 --> Attempt to read property "nama" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:04:23 --> Attempt to read property "nama" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:05:15 --> Attempt to read property "nama" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:05:16 --> Attempt to read property "nama" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:05:17 --> Attempt to read property "nama" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:05:31 --> Attempt to read property "qr_code" on array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 28.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "qr_code" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 28)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:05:50 --> Undefined variable $jenis
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 78.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenis', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 78)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(94): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:06:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 05:10:34 --> mysqli_sql_exception: Unknown column 'data_kendaraan.deleted_at' in 'where clause' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\parkir\app\Models\KendaraanModel.php(22): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\parkir\app\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+#8 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Admin->data()
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-08 05:10:34 --> Unknown column 'data_kendaraan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = :jenis:
+AND `data_kendaraan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\KendaraanModel.php(22): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 05:11:01 --> mysqli_sql_exception: Unknown column 'data_kendaraan.deleted_at' in 'where clause' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\parkir\app\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\parkir\app\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+#8 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Admin->data()
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-08 05:11:01 --> Unknown column 'data_kendaraan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = :jenis:
+AND `data_kendaraan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 05:11:03 --> mysqli_sql_exception: Unknown column 'data_kendaraan.deleted_at' in 'where clause' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\parkir\app\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\parkir\app\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+#8 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Admin->data()
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-08 05:11:03 --> Unknown column 'data_kendaraan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = :jenis:
+AND `data_kendaraan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:11:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 05:11:12 --> mysqli_sql_exception: Unknown column 'data_kendaraan.deleted_at' in 'where clause' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\parkir\app\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\parkir\app\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+#8 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Admin->data()
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-08 05:11:12 --> Unknown column 'data_kendaraan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = :jenis:
+AND `data_kendaraan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 05:11:13 --> mysqli_sql_exception: Unknown column 'data_kendaraan.deleted_at' in 'where clause' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, NULL)
+#6 C:\xampp\htdocs\parkir\app\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+#7 C:\xampp\htdocs\parkir\app\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+#8 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Admin->data()
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2023-08-08 05:11:13 --> Unknown column 'data_kendaraan.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = 0
+AND `data_kendaraan`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_kendaraan`
+WHERE `jenis` = :jenis:
+AND `data_kendaraan`.`deleted_at` IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(203): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, null)
+ 7 APPPATH\Models\KendaraanModel.php(29): CodeIgniter\BaseModel->find()
+ 8 APPPATH\Controllers\Admin.php(92): App\Models\KendaraanModel->getRoda()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:11:45 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 4 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 8 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:12:53 --> Undefined variable $nama
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 22.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nama', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:13:09 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 31.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 4 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 8 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:14:09 --> syntax error, unexpected token ";", expecting ")"
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 31.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 3 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 7 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:14:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 34.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 4 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 8 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:14:51 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 4 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 8 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:15:18 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 46.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 4 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 8 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:17:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:24:25 --> Unsupported operand types: string * int
+in APPPATH\Controllers\Home.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:29:58 --> Undefined variable $i
+in APPPATH\Views\home.php on line 50.
+ 1 APPPATH\Views\home.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $i', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:30:16 --> Cannot use object of type stdClass as array
+in APPPATH\Views\home.php on line 52.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:32:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:32:45 --> Undefined property: stdClass::$nomor
+in APPPATH\Views\home.php on line 53.
+ 1 APPPATH\Views\home.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nomor', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:34:34 --> Unsupported operand types: string * int
+in APPPATH\Controllers\Home.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:35:05 --> Undefined variable $data
+in APPPATH\Views\home.php on line 19.
+ 1 APPPATH\Views\home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php', 19)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:35:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:36:15 --> Unsupported operand types: string * int
+in APPPATH\Controllers\Home.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:38:29 --> Unsupported operand types: string / string
+in APPPATH\Controllers\Home.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->save()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:41:40 --> Attempt to read property "nama" on array
+in APPPATH\Views\home.php on line 21.
+ 1 APPPATH\Views\home.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 05:43:43 --> Undefined array key "ponse"
+in APPPATH\Views\home.php on line 54.
+ 1 APPPATH\Views\home.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ponse"', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\Home.php(28): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:45:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:47:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:49:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-08-08 05:50:03 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\parkir\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampp\htdocs\parkir\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampp\htdocs\parkir\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\xampp\htdocs\parkir\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\parkir\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\parkir\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\parkir\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\parkir\app\Controllers\Admin.php(155): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\parkir\system\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+#10 C:\xampp\htdocs\parkir\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\parkir\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\parkir\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\parkir\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2023-08-08 05:50:03 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_kendaraan` (`id`, `nama`, `jenis`, `no_kendaraan`, `merk`, `tipe`, `qr_code`, `created_at`, `updated_at`) VALUES (\'\', \'Andika\', \'Roda 2\', \'AG 5678 HH\', \'Yamaha\', \'Vixion\', NULL, \'2023-08-08 05:50:03\', \'2023-08-08 05:50:03\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_kendaraan` (`id`, `nama`, `jenis`, `no_kendaraan`, `merk`, `tipe`, `qr_code`, `created_at`, `updated_at`) VALUES (\'\', \'Andika\', \'Roda 2\', \'AG 5678 HH\', \'Yamaha\', \'Vixion\', NULL, \'2023-08-08 05:50:03\', \'2023-08-08 05:50:03\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_kendaraan` (`id`, `nama`, `jenis`, `no_kendaraan`, `merk`, `tipe`, `qr_code`, `created_at`, `updated_at`) VALUES (\'\', \'Andika\', \'Roda 2\', \'AG 5678 HH\', \'Yamaha\', \'Vixion\', NULL, \'2023-08-08 05:50:03\', \'2023-08-08 05:50:03\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_kendaraan` (`id`, `nama`, `jenis`, `no_kendaraan`, `merk`, `tipe`, `qr_code`, `created_at`, `updated_at`) VALUES (:id:, :nama:, :jenis:, :no_kendaraan:, :merk:, :tipe:, :qr_code:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin.php(155): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 05:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 05:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 06:13:25 --> Undefined variable $kontak
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 59.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kontak', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 06:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 06:13:50 --> Undefined variable $data
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 61.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 61)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 06:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 06:14:10 --> Undefined array key "ponsel"
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 62.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ponsel"', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 62)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 06:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 06:14:46 --> Undefined array key "no_kendaran"
+in APPPATH\Views\Admin\Data_Kendaraan\tabel.php on line 63.
+ 1 APPPATH\Views\Admin\Data_Kendaraan\tabel.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "no_kendaran"', 'C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php', 63)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\tabel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('Admin/Data_Kendaraan/tabel', null, true)
+ 5 APPPATH\Views\Admin\Data_Kendaraan\data_semua.php(32): CodeIgniter\View\View->include('Admin/Data_Kendaraan/tabel')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\parkir\\app\\Views\\Admin\\Data_Kendaraan\\data_semua.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('Admin/Data_Kendaraan/data_semua', [], true)
+ 9 APPPATH\Controllers\Admin.php(95): view('Admin/Data_Kendaraan/data_semua', [...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->data()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 06:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:21:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:32:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:35:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 06:55:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:38:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 07:38:26 --> file_put_contents(/img/.png): Failed to open stream: No such file or directory
+in VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(/img/.png): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\parkir\\vendor\\endroid\\qr-code\\src\\Writer\\Result\\AbstractResult.php', 29)
+ 2 VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php(29): file_put_contents('/img/.png', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . 'Z' . "\0" . '' . "\0" . '' . "\0" . 'à¿' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . 'rIDATxœíİMh\\eÇá{úFµ4í® A*-R¤Hªø±p!Ô…d\'j)¢‰¸‚«‚E‚èÆ‚q!*¸)%‚D?A$?hZPQ":.Ìkhy¡ç­szüŸ¹.ºèL†á9“ùñ$ÓŞ<ƒápX@¦-]/' . "\0" . '8w†`†`†`†`†`†`†`†`†`†`†`7Z]G?4Ÿiãõlc.¥ù:»½öşiøzÚ!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤æúwVK·“Cã<»ã½tVv`&`&`&`&`&`&`&`&`&`&`&`&`6úi¤æº³évÒ¥Û3‡LùŒV‡¯§‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u9Äh™[Cv`&`&`&`&`&`&`&`&`&`&`&`&`féß®SÌõ†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u94Î31ã|ímÛ×ÓÁÁÁÁÁÁÁÁÁÁÁÁÁF?ÔÆY>ıÓüUj>g“òœÍy/•‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚ÆöP™mLäø¦÷†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚5=)å”šnOèI9Ç¨ã|ŠR‡ßw;0000000000000k:”ršN31m\\»#FÂÁÁÁÁÁÁÁÁÁÁÁÁÁF6R·S))S>ã,eb¬ù:;|/Ù!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤6ôoÂ©¹6®½§(ós6d†`†`†`†`†`†`†`†`†`†`†`†`†`ƒn}êß9Fİ¾ì)s`İŠx•ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ,c©Ú˜¯êß„SÄ<ĞÿeäWd†`†`†`†`†`†`†`†`†`†`†`†`†`M§‘úw:QÚ˜‰I™[Jy‡ôlÊÁÁÁÁÁÁÁÁÁÁÁÁÁ&FşŒ)§Ô4×íœÍ8Oµ¡Ûkw6°IÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHÍõoÊ§İĞ“2•òİù:íÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ¬Ëi¤q6Î3F&œFÈÁÁÁÁÁÁÁÁÁÁÁÁÁL#ıÛ9Aª‰æëìöõ9;0000000000000ër)eÒ¥[İÎÙ´qâQÏæªÓs¡ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHı›5éVÿæRÖÙáŒQsv`&`&`&`&`&`&`&`&`&`&`&`&`6p@ä²C0C0C0C0C0C0C0C0C0C0C0C0Ç:y²Şy§~ü±ëuĞ%Çzùåš™©>êztIÀ±¾ÿ¾ëĞ=Ç0ôüó59YKKUU335Ô`P/½´ù€~¨‡ª={jr²¨ç;ó>ş¸î¼³.½´vî¬›nªgŸ­ß~;ëgtF>0­»âŠš›«7Ş¨¯¾ªÙÙÚµ«ªjzzã«ï¿_³³õí·uãµo_­¬ÔƒÖòr=ºñ€O?­ıûë?ê¶ÛjûöZY©Ã‡ëÄ‰zê©n.‡bH¨[oV——O»s}}8==Üºuxüøæ«†o½µqó¾û†UÃW_İ|Àk¯OjÅŒ¡ûei©>û¬êÀÍ;©‰‰zá…›kkUµ±oÿåöÛkrò<®’‘p¿,/WUİu×iwîÜY—]V««7gg«ªææêèQ¿ú¦p¿üõÏÂ—_¾ñÉÖßVW76ŞªºçZ\\¬Ÿ~ª¹¹ššª\'Ÿ¬ŸîpÉü>Äê—‰‰ªª§Ÿ®mÛÎüÒ›øá:x°––jq±y¤©W^©n8ëdDÜ/W^YŸ|RW_}ÚïÀÿÓEÕü|>\\Ï<S>Zwß]\'O—%2J~„µukUÕ¯¿vçµ×VÕæçUguÁ5?_33µ¶V_|1Òõq>8ÖÔTÕ?µúÛ¡C5=]/¾xæŞxûíÍ¿ÏÏ×›onŞüå—úòËºğÂºä’öKK­ëÃkïŞÚ²eãSå[n©ûï¯ªzï½ºãúúëÚ½»®¹¦Ö×ëİwkuµ«ë¯¯o¾©ë®«\'jïŞÚ·¯¶m«×_¯ÕÕzüñzì±n/ˆsğŸ………®×À9Ùµ«öì©Ï?¯••úı÷ºêªÚ¿¿ªêâ‹ëŞ{k}½¾û®«S§j÷îZ\\¬›o®ªÚ¾½ª;jm­¯>¨©©zâ‰zàn¯†sc†`~†`†`†`†`†`†`†`†`†`ÍdY_m	´' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 APPPATH\Controllers\Admin.php(177): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile('/img/.png')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 07:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 07:39:04 --> file_put_contents(/img/qrcode): Failed to open stream: No such file or directory
+in VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(/img/qrcode): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\parkir\\vendor\\endroid\\qr-code\\src\\Writer\\Result\\AbstractResult.php', 29)
+ 2 VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php(29): file_put_contents('/img/qrcode', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . 'Z' . "\0" . '' . "\0" . '' . "\0" . 'à¿' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . 'rIDATxœíİMh\\eÇá{úFµ4í® A*-R¤Hªø±p!Ô…d\'j)¢‰¸‚«‚E‚èÆ‚q!*¸)%‚D?A$?hZPQ":.Ìkhy¡ç­szüŸ¹.ºèL†á9“ùñ$ÓŞ<ƒápX@¦-]/' . "\0" . '8w†`†`†`†`†`†`†`†`†`†`†`7Z]G?4Ÿiãõlc.¥ù:»½öşiøzÚ!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤æúwVK·“Cã<»ã½tVv`&`&`&`&`&`&`&`&`&`&`&`&`6úi¤æº³évÒ¥Û3‡LùŒV‡¯§‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u9Äh™[Cv`&`&`&`&`&`&`&`&`&`&`&`&`féß®SÌõ†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u94Î31ã|ímÛ×ÓÁÁÁÁÁÁÁÁÁÁÁÁÁF?ÔÆY>ıÓüUj>g“òœÍy/•‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚ÆöP™mLäø¦÷†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚5=)å”šnOèI9Ç¨ã|ŠR‡ßw;0000000000000k:”ršN31m\\»#FÂÁÁÁÁÁÁÁÁÁÁÁÁÁF6R·S))S>ã,eb¬ù:;|/Ù!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤6ôoÂ©¹6®½§(ós6d†`†`†`†`†`†`†`†`†`†`†`†`†`ƒn}êß9Fİ¾ì)s`İŠx•ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ,c©Ú˜¯êß„SÄ<ĞÿeäWd†`†`†`†`†`†`†`†`†`†`†`†`†`M§‘úw:QÚ˜‰I™[Jy‡ôlÊÁÁÁÁÁÁÁÁÁÁÁÁÁ&FşŒ)§Ô4×íœÍ8Oµ¡Ûkw6°IÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHÍõoÊ§İĞ“2•òİù:íÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ¬Ëi¤q6Î3F&œFÈÁÁÁÁÁÁÁÁÁÁÁÁÁL#ıÛ9Aª‰æëìöõ9;0000000000000ër)eÒ¥[İÎÙ´qâQÏæªÓs¡ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHı›5éVÿæRÖÙáŒQsv`&`&`&`&`&`&`&`&`&`&`&`&`6p@ä²C0C0C0C0C0C0C0C0C0C0C0C0Ç:y²Şy§~ü±ëuĞ%Çzùåš™©>êztIÀ±¾ÿ¾ëĞ=Ç0ôüó59YKKUU335Ô`P/½´ù€~¨‡ª={jr²¨ç;ó>ş¸î¼³.½´vî¬›nªgŸ­ß~;ëgtF>0­»âŠš›«7Ş¨¯¾ªÙÙÚµ«ªjzzã«ï¿_³³õí·uãµo_­¬ÔƒÖòr=ºñ€O?­ıûë?ê¶ÛjûöZY©Ã‡ëÄ‰zê©n.‡bH¨[oV——O»s}}8==Üºuxüøæ«†o½µqó¾û†UÃW_İ|Àk¯OjÅŒ¡ûei©>û¬êÀÍ;©‰‰zá…›kkUµ±oÿåöÛkrò<®’‘p¿,/WUİu×iwîÜY—]V««7gg«ªææêèQ¿ú¦p¿üõÏÂ—_¾ñÉÖßVW76ŞªºçZ\\¬Ÿ~ª¹¹ššª\'Ÿ¬ŸîpÉü>Äê—‰‰ªª§Ÿ®mÛÎüÒ›øá:x°––jq±y¤©W^©n8ëdDÜ/W^YŸ|RW_}ÚïÀÿÓEÕü|>\\Ï<S>Zwß]\'O—%2J~„µukUÕ¯¿vçµ×VÕæçUguÁ5?_33µ¶V_|1Òõq>8ÖÔTÕ?µúÛ¡C5=]/¾xæŞxûíÍ¿ÏÏ×›onŞüå—úòËºğÂºä’öKK­ëÃkïŞÚ²eãSå[n©ûï¯ªzï½ºãúúëÚ½»®¹¦Ö×ëİwkuµ«ë¯¯o¾©ë®«\'jïŞÚ·¯¶m«×_¯ÕÕzüñzì±n/ˆsğŸ………®×À9Ùµ«öì©Ï?¯••úı÷ºêªÚ¿¿ªêâ‹ëŞ{k}½¾û®«S§j÷îZ\\¬›o®ªÚ¾½ª;jm­¯>¨©©zâ‰zàn¯†sc†`~†`†`†`†`†`†`†`†`†`ÍdY_m	´' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 APPPATH\Controllers\Admin.php(177): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile('/img/qrcode')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 07:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 07:39:32 --> file_put_contents(\img\qrcode): Failed to open stream: No such file or directory
+in VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(\\img\\qrcode): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\parkir\\vendor\\endroid\\qr-code\\src\\Writer\\Result\\AbstractResult.php', 29)
+ 2 VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php(29): file_put_contents('\\img\\qrcode', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . 'Z' . "\0" . '' . "\0" . '' . "\0" . 'à¿' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . 'rIDATxœíİMh\\eÇá{úFµ4í® A*-R¤Hªø±p!Ô…d\'j)¢‰¸‚«‚E‚èÆ‚q!*¸)%‚D?A$?hZPQ":.Ìkhy¡ç­szüŸ¹.ºèL†á9“ùñ$ÓŞ<ƒápX@¦-]/' . "\0" . '8w†`†`†`†`†`†`†`†`†`†`†`7Z]G?4Ÿiãõlc.¥ù:»½öşiøzÚ!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤æúwVK·“Cã<»ã½tVv`&`&`&`&`&`&`&`&`&`&`&`&`6úi¤æº³évÒ¥Û3‡LùŒV‡¯§‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u9Äh™[Cv`&`&`&`&`&`&`&`&`&`&`&`&`féß®SÌõ†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u94Î31ã|ímÛ×ÓÁÁÁÁÁÁÁÁÁÁÁÁÁF?ÔÆY>ıÓüUj>g“òœÍy/•‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚ÆöP™mLäø¦÷†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚5=)å”šnOèI9Ç¨ã|ŠR‡ßw;0000000000000k:”ršN31m\\»#FÂÁÁÁÁÁÁÁÁÁÁÁÁÁF6R·S))S>ã,eb¬ù:;|/Ù!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤6ôoÂ©¹6®½§(ós6d†`†`†`†`†`†`†`†`†`†`†`†`†`ƒn}êß9Fİ¾ì)s`İŠx•ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ,c©Ú˜¯êß„SÄ<ĞÿeäWd†`†`†`†`†`†`†`†`†`†`†`†`†`M§‘úw:QÚ˜‰I™[Jy‡ôlÊÁÁÁÁÁÁÁÁÁÁÁÁÁ&FşŒ)§Ô4×íœÍ8Oµ¡Ûkw6°IÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHÍõoÊ§İĞ“2•òİù:íÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ¬Ëi¤q6Î3F&œFÈÁÁÁÁÁÁÁÁÁÁÁÁÁL#ıÛ9Aª‰æëìöõ9;0000000000000ër)eÒ¥[İÎÙ´qâQÏæªÓs¡ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHı›5éVÿæRÖÙáŒQsv`&`&`&`&`&`&`&`&`&`&`&`&`6p@ä²C0C0C0C0C0C0C0C0C0C0C0C0Ç:y²Şy§~ü±ëuĞ%Çzùåš™©>êztIÀ±¾ÿ¾ëĞ=Ç0ôüó59YKKUU335Ô`P/½´ù€~¨‡ª={jr²¨ç;ó>ş¸î¼³.½´vî¬›nªgŸ­ß~;ëgtF>0­»âŠš›«7Ş¨¯¾ªÙÙÚµ«ªjzzã«ï¿_³³õí·uãµo_­¬ÔƒÖòr=ºñ€O?­ıûë?ê¶ÛjûöZY©Ã‡ëÄ‰zê©n.‡bH¨[oV——O»s}}8==Üºuxüøæ«†o½µqó¾û†UÃW_İ|Àk¯OjÅŒ¡ûei©>û¬êÀÍ;©‰‰zá…›kkUµ±oÿåöÛkrò<®’‘p¿,/WUİu×iwîÜY—]V««7gg«ªææêèQ¿ú¦p¿üõÏÂ—_¾ñÉÖßVW76ŞªºçZ\\¬Ÿ~ª¹¹ššª\'Ÿ¬ŸîpÉü>Äê—‰‰ªª§Ÿ®mÛÎüÒ›øá:x°––jq±y¤©W^©n8ëdDÜ/W^YŸ|RW_}ÚïÀÿÓEÕü|>\\Ï<S>Zwß]\'O—%2J~„µukUÕ¯¿vçµ×VÕæçUguÁ5?_33µ¶V_|1Òõq>8ÖÔTÕ?µúÛ¡C5=]/¾xæŞxûíÍ¿ÏÏ×›onŞüå—úòËºğÂºä’öKK­ëÃkïŞÚ²eãSå[n©ûï¯ªzï½ºãúúëÚ½»®¹¦Ö×ëİwkuµ«ë¯¯o¾©ë®«\'jïŞÚ·¯¶m«×_¯ÕÕzüñzì±n/ˆsğŸ………®×À9Ùµ«öì©Ï?¯••úı÷ºêªÚ¿¿ªêâ‹ëŞ{k}½¾û®«S§j÷îZ\\¬›o®ªÚ¾½ª;jm­¯>¨©©zâ‰zàn¯†sc†`~†`†`†`†`†`†`†`†`†`ÍdY_m	´' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 APPPATH\Controllers\Admin.php(177): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile('\\img\\qrcode')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 07:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 07:39:43 --> file_put_contents(img/qrcode): Failed to open stream: Permission denied
+in VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(img/qrcode): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\parkir\\vendor\\endroid\\qr-code\\src\\Writer\\Result\\AbstractResult.php', 29)
+ 2 VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php(29): file_put_contents('img/qrcode', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . 'Z' . "\0" . '' . "\0" . '' . "\0" . 'à¿' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . 'rIDATxœíİMh\\eÇá{úFµ4í® A*-R¤Hªø±p!Ô…d\'j)¢‰¸‚«‚E‚èÆ‚q!*¸)%‚D?A$?hZPQ":.Ìkhy¡ç­szüŸ¹.ºèL†á9“ùñ$ÓŞ<ƒápX@¦-]/' . "\0" . '8w†`†`†`†`†`†`†`†`†`†`†`7Z]G?4Ÿiãõlc.¥ù:»½öşiøzÚ!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤æúwVK·“Cã<»ã½tVv`&`&`&`&`&`&`&`&`&`&`&`&`6úi¤æº³évÒ¥Û3‡LùŒV‡¯§‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u9Äh™[Cv`&`&`&`&`&`&`&`&`&`&`&`&`féß®SÌõ†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u94Î31ã|ímÛ×ÓÁÁÁÁÁÁÁÁÁÁÁÁÁF?ÔÆY>ıÓüUj>g“òœÍy/•‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚ÆöP™mLäø¦÷†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚5=)å”šnOèI9Ç¨ã|ŠR‡ßw;0000000000000k:”ršN31m\\»#FÂÁÁÁÁÁÁÁÁÁÁÁÁÁF6R·S))S>ã,eb¬ù:;|/Ù!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤6ôoÂ©¹6®½§(ós6d†`†`†`†`†`†`†`†`†`†`†`†`†`ƒn}êß9Fİ¾ì)s`İŠx•ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ,c©Ú˜¯êß„SÄ<ĞÿeäWd†`†`†`†`†`†`†`†`†`†`†`†`†`M§‘úw:QÚ˜‰I™[Jy‡ôlÊÁÁÁÁÁÁÁÁÁÁÁÁÁ&FşŒ)§Ô4×íœÍ8Oµ¡Ûkw6°IÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHÍõoÊ§İĞ“2•òİù:íÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ¬Ëi¤q6Î3F&œFÈÁÁÁÁÁÁÁÁÁÁÁÁÁL#ıÛ9Aª‰æëìöõ9;0000000000000ër)eÒ¥[İÎÙ´qâQÏæªÓs¡ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHı›5éVÿæRÖÙáŒQsv`&`&`&`&`&`&`&`&`&`&`&`&`6p@ä²C0C0C0C0C0C0C0C0C0C0C0C0Ç:y²Şy§~ü±ëuĞ%Çzùåš™©>êztIÀ±¾ÿ¾ëĞ=Ç0ôüó59YKKUU335Ô`P/½´ù€~¨‡ª={jr²¨ç;ó>ş¸î¼³.½´vî¬›nªgŸ­ß~;ëgtF>0­»âŠš›«7Ş¨¯¾ªÙÙÚµ«ªjzzã«ï¿_³³õí·uãµo_­¬ÔƒÖòr=ºñ€O?­ıûë?ê¶ÛjûöZY©Ã‡ëÄ‰zê©n.‡bH¨[oV——O»s}}8==Üºuxüøæ«†o½µqó¾û†UÃW_İ|Àk¯OjÅŒ¡ûei©>û¬êÀÍ;©‰‰zá…›kkUµ±oÿåöÛkrò<®’‘p¿,/WUİu×iwîÜY—]V««7gg«ªææêèQ¿ú¦p¿üõÏÂ—_¾ñÉÖßVW76ŞªºçZ\\¬Ÿ~ª¹¹ššª\'Ÿ¬ŸîpÉü>Äê—‰‰ªª§Ÿ®mÛÎüÒ›øá:x°––jq±y¤©W^©n8ëdDÜ/W^YŸ|RW_}ÚïÀÿÓEÕü|>\\Ï<S>Zwß]\'O—%2J~„µukUÕ¯¿vçµ×VÕæçUguÁ5?_33µ¶V_|1Òõq>8ÖÔTÕ?µúÛ¡C5=]/¾xæŞxûíÍ¿ÏÏ×›onŞüå—úòËºğÂºä’öKK­ëÃkïŞÚ²eãSå[n©ûï¯ªzï½ºãúúëÚ½»®¹¦Ö×ëİwkuµ«ë¯¯o¾©ë®«\'jïŞÚ·¯¶m«×_¯ÕÕzüñzì±n/ˆsğŸ………®×À9Ùµ«öì©Ï?¯••úı÷ºêªÚ¿¿ªêâ‹ëŞ{k}½¾û®«S§j÷îZ\\¬›o®ªÚ¾½ª;jm­¯>¨©©zâ‰zàn¯†sc†`~†`†`†`†`†`†`†`†`†`ÍdY_m	´' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 APPPATH\Controllers\Admin.php(177): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile('img/qrcode')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 07:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 07:51:08 --> file_put_contents(img/qrcode): Failed to open stream: Permission denied
+in VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(img/qrcode): Failed to open stream: Permission denied', 'C:\\xampp\\htdocs\\parkir\\vendor\\endroid\\qr-code\\src\\Writer\\Result\\AbstractResult.php', 29)
+ 2 VENDORPATH\endroid\qr-code\src\Writer\Result\AbstractResult.php(29): file_put_contents('img/qrcode', '‰PNG
+
+' . "\0" . '' . "\0" . '' . "\0" . 'IHDR' . "\0" . '' . "\0" . '@' . "\0" . '' . "\0" . 'Z' . "\0" . '' . "\0" . '' . "\0" . 'à¿' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '	pHYs' . "\0" . '' . "\0" . 'Ä' . "\0" . '' . "\0" . 'Ä•+' . "\0" . '' . "\0" . 'rIDATxœíİMh\\eÇá{úFµ4í® A*-R¤Hªø±p!Ô…d\'j)¢‰¸‚«‚E‚èÆ‚q!*¸)%‚D?A$?hZPQ":.Ìkhy¡ç­szüŸ¹.ºèL†á9“ùñ$ÓŞ<ƒápX@¦-]/' . "\0" . '8w†`†`†`†`†`†`†`†`†`†`†`7Z]G?4Ÿiãõlc.¥ù:»½öşiøzÚ!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤æúwVK·“Cã<»ã½tVv`&`&`&`&`&`&`&`&`&`&`&`&`6úi¤æº³évÒ¥Û3‡LùŒV‡¯§‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u9Äh™[Cv`&`&`&`&`&`&`&`&`&`&`&`&`féß®SÌõ†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚u94Î31ã|ímÛ×ÓÁÁÁÁÁÁÁÁÁÁÁÁÁF?ÔÆY>ıÓüUj>g“òœÍy/•‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚ÆöP™mLäø¦÷†‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚	‚5=)å”šnOèI9Ç¨ã|ŠR‡ßw;0000000000000k:”ršN31m\\»#FÂÁÁÁÁÁÁÁÁÁÁÁÁÁF6R·S))S>ã,eb¬ù:;|/Ù!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!˜€!XÓi¤6ôoÂ©¹6®½§(ós6d†`†`†`†`†`†`†`†`†`†`†`†`†`ƒn}êß9Fİ¾ì)s`İŠx•ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ,c©Ú˜¯êß„SÄ<ĞÿeäWd†`†`†`†`†`†`†`†`†`†`†`†`†`M§‘úw:QÚ˜‰I™[Jy‡ôlÊÁÁÁÁÁÁÁÁÁÁÁÁÁ&FşŒ)§Ô4×íœÍ8Oµ¡Ûkw6°IÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHÍõoÊ§İĞ“2•òİù:íÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀ¬Ëi¤q6Î3F&œFÈÁÁÁÁÁÁÁÁÁÁÁÁÁL#ıÛ9Aª‰æëìöõ9;0000000000000ër)eÒ¥[İÎÙ´qâQÏæªÓs¡ìÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀLÀlôÓHı›5éVÿæRÖÙáŒQsv`&`&`&`&`&`&`&`&`&`&`&`&`6p@ä²C0C0C0C0C0C0C0C0C0C0C0C0Ç:y²Şy§~ü±ëuĞ%Çzùåš™©>êztIÀ±¾ÿ¾ëĞ=Ç0ôüó59YKKUU335Ô`P/½´ù€~¨‡ª={jr²¨ç;ó>ş¸î¼³.½´vî¬›nªgŸ­ß~;ëgtF>0­»âŠš›«7Ş¨¯¾ªÙÙÚµ«ªjzzã«ï¿_³³õí·uãµo_­¬ÔƒÖòr=ºñ€O?­ıûë?ê¶ÛjûöZY©Ã‡ëÄ‰zê©n.‡bH¨[oV——O»s}}8==Üºuxüøæ«†o½µqó¾û†UÃW_İ|Àk¯OjÅŒ¡ûei©>û¬êÀÍ;©‰‰zá…›kkUµ±oÿåöÛkrò<®’‘p¿,/WUİu×iwîÜY—]V««7gg«ªææêèQ¿ú¦p¿üõÏÂ—_¾ñÉÖßVW76ŞªºçZ\\¬Ÿ~ª¹¹ššª\'Ÿ¬ŸîpÉü>Äê—‰‰ªª§Ÿ®mÛÎüÒ›øá:x°––jq±y¤©W^©n8ëdDÜ/W^YŸ|RW_}ÚïÀÿÓEÕü|>\\Ï<S>Zwß]\'O—%2J~„µukUÕ¯¿vçµ×VÕæçUguÁ5?_33µ¶V_|1Òõq>8ÖÔTÕ?µúÛ¡C5=]/¾xæŞxûíÍ¿ÏÏ×›onŞüå—úòËºğÂºä’öKK­ëÃkïŞÚ²eãSå[n©ûï¯ªzï½ºãúúëÚ½»®¹¦Ö×ëİwkuµ«ë¯¯o¾©ë®«\'jïŞÚ·¯¶m«×_¯ÕÕzüñzì±n/ˆsğŸ………®×À9Ùµ«öì©Ï?¯••úı÷ºêªÚ¿¿ªêâ‹ëŞ{k}½¾û®«S§j÷îZ\\¬›o®ªÚ¾½ª;jm­¯>¨©©zâ‰zàn¯†sc†`~†`†`†`†`†`†`†`†`†`ÍdY_m	´' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'IEND®B`‚')
+ 3 APPPATH\Controllers\Admin.php(177): Endroid\QrCode\Writer\Result\AbstractResult->saveToFile('img/qrcode')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->save_data()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 07:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 07:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:07:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:07:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:07:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:10:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:18:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 08:18:01 --> Call to a member function deleteFile() on string
+in APPPATH\Controllers\Admin.php on line 257.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->hapus_data('19')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 08:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:18:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-08 08:19:31 --> Call to a member function delete() on string
+in APPPATH\Controllers\Admin.php on line 257.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->hapus_data('22')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\parkir\\public\\index.php')
+INFO - 2023-08-08 08:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:20:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-08 08:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
