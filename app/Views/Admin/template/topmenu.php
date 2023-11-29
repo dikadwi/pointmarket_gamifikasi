@@ -14,22 +14,9 @@
 
             <li class="nav-item">
                 <a href="" type="button" class="nav-link" data-toggle="modal" data-target="#modalTambah">
-                    <i class="nav-icon fa fa-plus"> Tambah Data</i>
+                    <i class="nav-icon fa fa-plus"> Tambah Transaksi</i>
                 </a>
             </li>
-
-            <li class="nav-item">
-                <a href="" type="button" class="nav-link" data-toggle="modal" data-target="#modalMasuk">
-                    <i class="nav-icon fa fa-plus-circle"> Kendaraan Masuk</i>
-                </a>
-            </li>
-
-            <li class="nav-item">
-                <a href="" type="button" class="nav-link" data-toggle="modal" data-target="#modalKeluar">
-                    <i class="nav-icon fa fa-minus-circle"> Kendaraan Keluar</i>
-                </a>
-            </li>
-
         <?php endif; ?>
 
     </ul>
@@ -44,9 +31,9 @@
         <li class="nav-item dropdown">
             <a class="nav-link" data-toggle="dropdown" href="#">
                 <i class="far fa-user"></i>
-                <span class="badge badge-warning navbar-badge"></span><?= user()->username; ?>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-item dropdown-header"><?= user()->username; ?></span>
                 <div class="dropdown-divider"></div>
                 <a href="/Admin/detail/<?= user()->id; ?>" class="dropdown-item">
                     <i class="fas fa-user mr-2"></i> Profil
@@ -68,7 +55,7 @@
 
 <!--Data Modal Box Tambah Data-->
 <div class="modal fade" id="modalTambah">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">Tambah Data </h5>

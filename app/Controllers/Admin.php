@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use App\Models\KendaraanModel;
 use App\Models\JenisModel;
+use App\Models\ScanModel;
+use App\Models\UserModel;
+use Dompdf\Dompdf;
 use Endroid\QrCode\Color\Color;
 use Endroid\QrCode\Encoding\Encoding;
 use Endroid\QrCode\ErrorCorrectionLevel\ErrorCorrectionLevelLow;
@@ -18,23 +21,33 @@ class Admin extends BaseController
 {
     protected $KendaraanModel;
     protected $JenisModel;
+    protected $UserModel;
+    protected $ScanModel;
 
 
     public function __construct()
     {
         $this->KendaraanModel = new KendaraanModel();
         $this->JenisModel = new JenisModel();
+        $this->UserModel = new UserModel();
+        $this->ScanModel = new ScanModel();
     }
 
 
     //Menampilkan halaman utama
     public function index()
     {
-        $data['title'] = 'Sistem Informasi Parkir';
+
+        $data = array(
+            'title' => 'Sistem Informasi Parkir',
+            'totaldata' => $this->KendaraanModel->total(),
+            'totaluser' => $this->UserModel->total(),
+        );
 
         return view('Admin/index', $data);
     }
 
+    // Menampilkan semua data user
     public function user()
     {
         $data['title'] = 'Data Pengguna';
@@ -53,14 +66,17 @@ class Admin extends BaseController
         return view('Admin/Data_User/user', $data);
     }
 
-
+    //Menampilkan detail user sesuai id
     public function detail($id)
     {
-        $data['title'] = 'Profile';
+
+        $data['title'] = 'Detail';
+        // $users = new \Myth\Auth\Models\UserModel();
+        // $data['users'] = $users->findAll();
 
         $db      = \Config\Database::connect();
         $builder = $db->table('users');
-        $builder->select('users.id as userid, username, email, name');
+        $builder->select('users.id as userid, username, email, created_at, name');
         $builder->join('auth_groups_users', 'auth_groups_users.user_id = users.id');
         $builder->join('auth_groups', 'auth_groups.id = auth_groups_users.group_id');
         $builder->where('users.id', $id);
@@ -69,18 +85,6 @@ class Admin extends BaseController
         $data['user'] = $query->getRow();
 
         return view('Admin/Data_User/detail', $data);
-    }
-
-    public function detail_data($id)
-    {
-        $data['title'] = 'Detail Data';
-        $db      = \Config\Database::connect();
-        $builder = $db->table('data_kendaraan');
-        $builder->where('id', $id);
-        $query = $builder->get();
-        $data['data'] = $query->getRow();
-
-        return view('Admin/Data_Kendaraan/Roda_2/detail', $data);
     }
 
     //Menampilkan Semua Data
@@ -110,7 +114,7 @@ class Admin extends BaseController
             'roda' => $this->KendaraanModel->getRoda($jenis)
         ];
 
-        return view('Admin/Data_Kendaraan/Roda_2/Roda2', $data);
+        return view('Admin/Data_Kendaraan/Roda2', $data);
     }
 
     //Menampilkan data dengan jenis terpilih (Roda4)
@@ -128,25 +132,67 @@ class Admin extends BaseController
             'roda' => $this->KendaraanModel->getRoda($jenis)
         ];
 
-        return view('Admin/Data_Kendaraan/Roda_4/Roda4', $data);
+        return view('Admin/Data_Kendaraan/Roda4', $data);
     }
 
+    //Menampilkan data kendaraan masuk
     public function masuk()
     {
+
         $data = [
             'title' => 'Data Kendaraan',
-            'jenis' => $this->JenisModel->getJenis(),
-            'roda' => $this->KendaraanModel->getRoda()
+            // 'jenis' => $this->JenisModel->getJenis(),
+            // 'roda' => $this->KendaraanModel->getRoda(),
+            'scan' => $this->ScanModel->findAll(),
         ];
 
-        return view('Admin/Data_Kendaraan/Masuk/kendaraan_masuk', $data);
+        return view('Admin/Data_Kendaraan/kendaraan_masuk', $data);
     }
 
-    //Menyimpan Data Baru ke database
+    //Melakukan convert pdf
+    public function printpdf()
+    {
+        $data = [
+            'roda' => $this->KendaraanModel->findAll(),
+        ];
+        // return view('Admin/pdf', $data);
+
+        $dompdf = new Dompdf();
+
+        $html = view('Admin/pdf/pdf', $data);
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+        $dompdf->stream('data_kendaraan.pdf', array("Attachment" => false));
+    }
+
+    //Melakukan convert pdf sesuai id
+    public function cetakpdf($id)
+    {
+        $data = [
+            'roda' => $this->KendaraanModel->getId($id),
+        ];
+        // return view('Admin/pdf/cetak', $data);
+
+        $dompdf = new Dompdf();
+
+        $html = view('Admin/pdf/cetak', $data);
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+        $dompdf->stream('detail.pdf', array("Attachment" => false));
+    }
+
+    //Menyimpan Data Baru ke database dan Generate QRCode
     public function save_data()
     {
+        if (!$this->validate([
+            'nama' => 'required|is_unique[data_kendaraan.nama]'
+        ])) {
+            session()->setFlashdata("gagal", "Data Sudah Ada !");
+        }
 
-        $id = $this->request->getVar('id');;
+        $id = $this->request->getVar('id');
         $nama = $this->request->getVar('nama');
         $jenis = $this->request->getVar('jenis');
         $no_kendaraan = $this->request->getVar('no_kendaraan');
@@ -155,7 +201,8 @@ class Admin extends BaseController
 
         $writer = new PngWriter();
         //Create QRCode
-        $qrCode = QrCode::create('Nama :' . $nama . '_No-Kend :' . $no_kendaraan . '_Jenis :' . $jenis . '_Merk :' . $merk . '_Tipe :' . $tipe)
+        // $qrCode = QrCode::create('Nama :' . $nama . '_No-Kend :' . $no_kendaraan . '_Jenis :' . $jenis . '_Merk :' . $merk . '_Tipe :' . $tipe)
+        $qrCode = QrCode::create($nama)
             ->setEncoding(new Encoding('UTF-8'))
             ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
             ->setSize(300)
@@ -192,16 +239,17 @@ class Admin extends BaseController
             'qr_code' => $qr
         ];
 
+        session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
+
         $this->KendaraanModel->save($data);
         return redirect()->back();
     }
 
-
-    //Mengupdate data dan disimpan ke database
+    //Mengupdate data dan disimpan ke database dan Generate ulang QRCode
     public function update_data($id)
     {
 
-        $id = $this->request->getVar('id');;
+        $id = $this->request->getVar('id');
         $nama = $this->request->getVar('nama');
         $jenis = $this->request->getVar('jenis');
         $no_kendaraan = $this->request->getVar('no_kendaraan');
@@ -210,7 +258,8 @@ class Admin extends BaseController
 
         $writer = new PngWriter();
         //Create QRCode
-        $qrCode = QrCode::create('Nama :' . $nama . '_No-Kend :' . $no_kendaraan . '_Jenis :' . $jenis . '_Merk :' . $merk . '_Tipe :' . $tipe)
+        // $qrCode = QrCode::create($nama . '_' . $no_kendaraan . '_' . $jenis . '_' . $merk . '_' . $tipe)
+        $qrCode = QrCode::create($nama)
             ->setEncoding(new Encoding('UTF-8'))
             ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
             ->setSize(300)
@@ -243,10 +292,10 @@ class Admin extends BaseController
             'qr_code' => $qr
         ];
 
+        session()->setFlashdata("sukses", "Data Berhasil Diupdate.");
+
         $this->KendaraanModel->save($data);
         return redirect()->back();
-
-        session()->setFlashdata('pesan', 'Data Berhasil Diubah.');
     }
 
     //Menghapus data dari database berdasarkan ID
@@ -254,8 +303,22 @@ class Admin extends BaseController
     {
         $this->KendaraanModel->delete($id);
 
-        session()->setFlashdata('pesan', 'Data Berhasil dihapus.');
+        session()->setFlashdata("sukses", "Data Berhasil Dihapus.");
 
         return redirect()->back();
     }
+
+
+
+    // public function detail_data($id)
+    // {
+    //     $data['title'] = 'Detail Data';
+    //     $db      = \Config\Database::connect();
+    //     $builder = $db->table('data_kendaraan');
+    //     $builder->where('id', $id);
+    //     $query = $builder->get();
+    //     $data['data'] = $query->getRow();
+
+    //     return view('Admin/Data_Kendaraan/Roda_2/detail', $data);
+    // }
 }

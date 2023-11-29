@@ -14,9 +14,14 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/dist/css/adminlte.min.css">
+    <style>
+        .body {
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 
-<body class="hold-transition login-page">
+<body class="hold-transition login-page body">
 
     <div class="login-box">
         <!-- /.login-logo -->

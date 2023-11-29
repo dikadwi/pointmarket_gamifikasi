@@ -37,14 +37,17 @@ $routes->get('/', 'Admin::index', ['filter' => 'login']);
 $routes->get('login', 'Login::index');
 //Menampilkan halaman Register
 $routes->get('register', 'Register::index');
+$routes->get('gamifikasi', 'Gamifikasi::index');
 
 
 $routes->group('Admin', ['filter' => 'login'], function ($routes) {
     $routes->get('index', 'Admin::index');
     $routes->get('user', 'Admin::user', ['filter' => 'role:admin']);
     $routes->get('detail/(:num)', 'Admin::detail/$1');
-    $routes->get('detail_data/(:num)', 'Admin::detail_data/$1');
+    // $routes->get('detail_data/(:num)', 'Admin::detail_data/$1');
     $routes->get('data', 'Admin::data');
+    $routes->get('printpdf', 'Admin::printpdf');
+    $routes->get('cetakpdf/(:num)', 'Admin::cetakpdf/$1');
     $routes->get('qrcode', 'Admin::qrcode');
     $routes->get('roda2', 'Admin::roda2');
     $routes->get('roda4', 'Admin::roda4');
@@ -57,7 +60,10 @@ $routes->group('Admin', ['filter' => 'login'], function ($routes) {
     $routes->get('hapus_data/(:num)', 'Admin::hapus_data/$1', ['filter' => 'role:admin']);
 });
 
+// $routes->get('notification', 'Message::showSweet');
+
 $routes->get('home', 'Home::index');
+$routes->get('home/scan', 'Home::scan');
 $routes->get('home/add', 'Home::add');
 $routes->post('home/save', 'Home::save');
 

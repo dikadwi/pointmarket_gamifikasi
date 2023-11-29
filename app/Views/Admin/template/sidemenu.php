@@ -3,7 +3,7 @@
      <!-- Brand Logo -->
      <a href="/Admin/index" class="brand-link">
          <img src="#" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
-         <span class="brand-text font-weight-light">Sistem Informasi Admin</span>
+         <span class="brand-text font-weight-light">Point Market</span>
      </a>
      <!-- Sidebar -->
      <div class="sidebar">
@@ -34,6 +34,38 @@
                          </a>
                      </li>
                  <?php endif; ?>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">
+                         <i class="nav-icon fas fa-trophy"></i>
+                         <p>
+                             Leaderboards
+                         </p>
+                     </a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">
+                         <i class="nav-icon fas fa-users"></i>
+                         <p>
+                             Mahasiswa
+                         </p>
+                     </a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">
+                         <i class="nav-icon fas fa-shopping-cart"></i>
+                         <p>
+                             Transaksi
+                         </p>
+                     </a>
+                 </li>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">
+                         <i class="nav-icon fas fa-file"></i>
+                         <p>
+                             Report
+                         </p>
+                     </a>
+                 </li>
                  <li class="nav-item">
                      <a href="/Admin/data" class="nav-link">
                          <i class="nav-icon fas fa-university"></i>
@@ -68,22 +100,13 @@
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a href="#" class="nav-link">
+                     <a href="/gamifikasi" class="nav-link">
                          <i class="nav-icon fas fa-minus"></i>
                          <p>
-                             Kendaraan Keluar
+                             Gamifikasi
                          </p>
                      </a>
                  </li>
-                 <li class="nav-item">
-                     <a href="/Admin/qrcode" class="nav-link">
-                         <i class="nav-icon fas fa-minus"></i>
-                         <p>
-                             QR Code
-                         </p>
-                     </a>
-                 </li>
-
              </ul>
          </nav>
          <!-- /.sidebar-menu -->

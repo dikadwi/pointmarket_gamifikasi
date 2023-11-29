@@ -22,4 +22,14 @@ class KendaraanModel extends Model
     {
         return $this->where(['jenis' => $jenis])->find();
     }
+
+    public function total()
+    {
+        return $this->countAll();
+    }
+
+    public function getId($id)
+    {
+        return $this->where(['id' => $id])->find();
+    }
 }
