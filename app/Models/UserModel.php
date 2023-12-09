@@ -36,7 +36,7 @@ class UserModel extends Model
     //  *
     //  * @var int|null
     //  */
-    // protected $assignGroup;
+    protected $assignGroup;
 
     /**
      * Logs a password reset attempt for posterity sake.
@@ -70,20 +70,30 @@ class UserModel extends Model
     //  *
     //  * @return $this
     //  */
-    // public function withGroup(string $groupName)
-    // {
-    //     $group = $this->db->table('auth_groups')->where('name', $groupName)->get()->getFirstRow();
 
-    //     $this->assignGroup = $group->id;
+    public function withGroup(string $groupName)
+    {
+        $group = $this->db->table('auth_groups')->where('name', $groupName)->get()->getFirstRow();
 
-    //     return $this;
-    // }
+        // $this->assignGroup = $group->id;
 
-    // /**
-    //  * Clears the group to assign to newly created users.
-    //  *
-    //  * @return $this
-    //  */
+        if ($group) {
+            $this->assignGroup = $group->id;
+        } else {
+            // Jika grup tidak ditemukan, tambahkan kode untuk menangani situasi ini
+            // Misalnya, throw Exception atau handle kasus yang sesuai
+            // Di sini kita akan memaksa grup menjadi 'users' jika tidak ditemukan grup dengan nama yang diinginkan
+            $this->assignGroup = 2; // ID grup 'users'
+        }
+
+        return $this;
+    }
+
+    /**
+     * Clears the group to assign to newly created users.
+     *
+     * @return $this
+     */
     // public function clearGroup()
     // {
     //     $this->assignGroup = null;

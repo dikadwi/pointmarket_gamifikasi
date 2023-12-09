@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\KendaraanModel;
 use App\Models\JenisModel;
+use App\Models\JenisTransaksiModel;
+use App\Models\TransaksiModel;
 use App\Models\ScanModel;
 use App\Models\UserModel;
 use Dompdf\Dompdf;
@@ -23,6 +25,8 @@ class Admin extends BaseController
     protected $JenisModel;
     protected $UserModel;
     protected $ScanModel;
+    protected $JenisTransaksiModel;
+    protected $TransaksiModel;
 
 
     public function __construct()
@@ -31,26 +35,31 @@ class Admin extends BaseController
         $this->JenisModel = new JenisModel();
         $this->UserModel = new UserModel();
         $this->ScanModel = new ScanModel();
+        $this->JenisTransaksiModel = new JenisTransaksiModel();
+        $this->TransaksiModel = new TransaksiModel();
     }
 
 
     //Menampilkan halaman utama
     public function index()
     {
-
         $data = array(
-            'title' => 'Sistem Informasi Parkir',
+            'title' => 'Point Market',
             'totaldata' => $this->KendaraanModel->total(),
             'totaluser' => $this->UserModel->total(),
+            'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
         );
 
-        return view('Admin/index', $data);
+        return view('index', $data);
     }
 
     // Menampilkan semua data user
     public function user()
     {
-        $data['title'] = 'Data Pengguna';
+        $data = array(
+            'title' => 'Data Pengguna',
+            'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
+        );
         // $users = new \Myth\Auth\Models\UserModel();
         // $data['users'] = $users->findAll();
 
@@ -63,14 +72,17 @@ class Admin extends BaseController
 
         $data['users'] = $query->getResult();
 
-        return view('Admin/Data_User/user', $data);
+        return view('Data_User/user', $data);
     }
 
     //Menampilkan detail user sesuai id
     public function detail($id)
     {
 
-        $data['title'] = 'Detail';
+        $data = array(
+            'title' => 'Detail',
+            'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
+        );
         // $users = new \Myth\Auth\Models\UserModel();
         // $data['users'] = $users->findAll();
 
@@ -84,7 +96,7 @@ class Admin extends BaseController
 
         $data['user'] = $query->getRow();
 
-        return view('Admin/Data_User/detail', $data);
+        return view('Data_User/detail', $data);
     }
 
     //Menampilkan Semua Data
@@ -242,6 +254,34 @@ class Admin extends BaseController
         session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
 
         $this->KendaraanModel->save($data);
+        return redirect()->back();
+    }
+
+    public function save_transaksi()
+    {
+        if (!$this->validate([
+            'nama' => 'required|is_unique[data_kendaraan.nama]'
+        ])) {
+            session()->setFlashdata("gagal", "Data Sudah Ada !");
+        }
+
+        $id_jenis = $this->request->getVar('id_jenis');
+        $nama = $this->request->getVar('nama');
+        $detail = $this->request->getVar('detail');
+        $keterangan = $this->request->getVar('keterangan');
+        $point = $this->request->getVar('point');
+
+        $data = [
+            'id_jenis' => $id_jenis,
+            'nama' => $nama,
+            'detail' => $detail,
+            'keterangan' => $keterangan,
+            'point' => $point
+        ];
+
+        session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
+
+        $this->TransaksiModel->save($data);
         return redirect()->back();
     }
 

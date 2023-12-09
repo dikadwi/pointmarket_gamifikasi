@@ -176,6 +176,7 @@ class AuthController extends Controller
             $users = $users->withGroup($this->config->defaultUserGroup);
         }
 
+
         if (!$users->save($user)) {
             return redirect()->back()->withInput()->with('errors', $users->errors());
         }

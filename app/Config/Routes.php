@@ -38,9 +38,30 @@ $routes->get('login', 'Login::index');
 //Menampilkan halaman Register
 $routes->get('register', 'Register::index');
 $routes->get('gamifikasi', 'Gamifikasi::index');
+$routes->get('gamifikasi/mahasiswa', 'Gamifikasi::mahasiswa');
+
+$routes->get('Market', 'Market::index');
+$routes->post('Market/buyItem', 'Market::buyItem');
+
+$routes->group('Mahasiswa', ['filter' => 'login'], function ($routes) {
+    $routes->get('', 'Mahasiswa::index');
+    $routes->post('save_Mhs', 'Mahasiswa::save_Mhs');
+    $routes->post('update_badges/(:num)', 'Transaksi::update_badges/$1');
+    $routes->get('hapus_Mhs/(:num)', 'Mahasiswa::hapus_Mhs/$1');
+});
+
+$routes->group('Transaksi', ['filter' => 'login'], function ($routes) {
+    $routes->get('badges', 'Transaksi::badges');
+    $routes->post('save_badges', 'Transaksi::save_badges');
+    $routes->post('update_badges/(:num)', 'Transaksi::update_badges/$1');
+    $routes->get('hapus_badges/(:num)', 'Transaksi::hapus_badges/$1');
+});
+
+
 
 
 $routes->group('Admin', ['filter' => 'login'], function ($routes) {
+    $routes->get('transaksi', 'Transaksi::badges');
     $routes->get('index', 'Admin::index');
     $routes->get('user', 'Admin::user', ['filter' => 'role:admin']);
     $routes->get('detail/(:num)', 'Admin::detail/$1');
@@ -52,6 +73,8 @@ $routes->group('Admin', ['filter' => 'login'], function ($routes) {
     $routes->get('roda2', 'Admin::roda2');
     $routes->get('roda4', 'Admin::roda4');
     $routes->get('masuk', 'Admin::masuk');
+    // //Routes Untuk Menjalankan Perintah Post (Save Data di Controller Perkir)
+    $routes->post('save_transaksi', 'Admin::save_transaksi', ['filter' => 'role:admin']);
     // //Routes Untuk Menjalankan Perintah Post (Save Data di Controller Perkir)
     $routes->post('save_data', 'Admin::save_data', ['filter' => 'role:admin']);
     // //Routes Untuk Menjalankan Perintah Post (Update Data di Controller Perkir)
