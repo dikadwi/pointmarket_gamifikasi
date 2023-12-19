@@ -45,6 +45,12 @@
                         </div>
                     </div>
                     <div class="form-group ">
+                        <label for="point" class="col-form-label">Point</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="point" name="point" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
+                        </div>
+                    </div>
+                    <div class="form-group ">
                         <label for="detail" class="col-form-label">Detail</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="detail" name="detail" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">

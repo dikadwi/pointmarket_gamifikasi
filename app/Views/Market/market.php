@@ -11,31 +11,27 @@
         </h3>
     </div>
 
-    <!-- <form action="/Market/buyItem" method="post">
-        <label for="mahasiswa">Pilih Mahasiswa:</label>
-        <select name="mahasiswa" id="mahasiswa">
-            <?php foreach ($mahasiswa as $mhs) : ?>
-                <option value="<?= $mhs['id'] ?>"><?= $mhs['nama'] ?></option>
-            <?php endforeach; ?>
-        </select>
-        <br><br>
-        <label for="item">Pilih Item:</label>
-        <select name="item" id="item">
-            <?php foreach ($items as $item) : ?>
-                <option value="<?= $item['id'] ?>"><?= $item['nama'] ?></option>
-            <?php endforeach; ?>
-        </select>
-        <br><br>
-        <button type="submit">Beli Item</button>
-    </form> -->
-
     <section class="content">
         <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
             <div class="row">
-                <div class="col-sm-12">
-                    <?= $this->include('market/tabel'); ?>
-                </div>
+                <!-- <div class="col-sm-12">
+                    <$this->include('market/tabel'); ?>
+                </div> -->
+                <?php foreach ($market as $item) : ?>
+                    <div class="col-lg-3 col-6 ">
+                        <div class="card">
+                            <h5 class="card-header"> <?= $item['nama']; ?></h5>
+                            <img src="..." class="card-img-top" alt="Gambar">
+                            <div class="card-body">
+                                <h5 class="card-title">Detail :</h5>
+                                <p class="card-text"><?= $item['detail']; ?></p>
+                                <p class="list-group-item"> <?= $item['point_harga']; ?> Point</p>
+                                <button href="/Market/buyItem/<?= $item['id']; ?>" class="btn btn-primary btn-beli">Beli</button>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
     </section>
 </div>

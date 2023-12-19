@@ -33,17 +33,34 @@
                 <i class="far fa-user"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <span class="dropdown-item dropdown-header"><?= user()->username; ?></span>
+                <span class="dropdown-item dropdown-header"><?= $username; ?></span>
                 <div class="dropdown-divider"></div>
-                <a href="/Admin/detail/<?= user()->id; ?>" class="dropdown-item">
+                <a href="/Login/detail" class="dropdown-item">
                     <i class="fas fa-user mr-2"></i> Profil
                 </a>
                 <div class="dropdown-divider"></div>
-                <a href="/logout" class="dropdown-item">
+                <a href="/logoutM" class="dropdown-item">
                     <i class="fas fa-reply"></i> Logout
                 </a>
+
             </div>
         </li>
+        <?php if (in_groups('admin')) : ?>
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-user"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <a href="/Admin/detail/<?= user()->id; ?>" class="dropdown-item">
+                        <i class="fas fa-user mr-2"></i> Profil
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="/logout" class="dropdown-item">
+                        <i class="fas fa-reply"></i> Logout
+                    </a>
+                </div>
+            </li>
+        <?php endif; ?>
         <li class="nav-item">
             <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                 <i class="fas fa-expand-arrows-alt"></i>
@@ -75,10 +92,10 @@
                         <!-- Mengambil transaksi untuk menampilkan dropdown menu dari dB -->
                         <label for="id_jenis" class="col-form-label">Jenis Transaksi</label>
                         <div class="col-sm-10">
-                            <select name="jenis" id="jenis" class="form-control" required oninvalid="this.setCustomValidity('Pilih Jenis Kendaraan')" oninput="setCustomValidity('')">
-                                <option>--Pilih Jenis Transaksi--</option>
+                            <select name="id_jenis" id="id_jenis" class="form-control" required oninvalid="this.setCustomValidity('Pilih Salah Satu')" oninput="setCustomValidity('')">
+                                <option value="">--Pilih Transaksi--</option>
                                 <?php foreach ($jenis_transaksi as $j) : ?>
-                                    <option value="<?= $j['id_jenis'] ?>"><?= $j['nama_transaksi'] ?></option>
+                                    <option value="<?= $j['kode_jenis'] ?>"><?= $j['nama_transaksi'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -104,7 +121,7 @@
                     <div class="form-group ">
                         <label for="point" class="col-form-label">Point</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="point" name="point" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
+                            <input type="number" class="form-control" id="point" name="point" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div>
             </div>

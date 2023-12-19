@@ -9,19 +9,24 @@ use App\Models\MahasiswaModel;
 class Mahasiswa extends BaseController
 {
     protected $MahasiswaModel;
+    protected $BadgesModel;
     protected $JenisTransaksiModel;
 
     public function __construct()
     {
+        $this->BadgesModel = new BadgesModel();
         $this->MahasiswaModel = new MahasiswaModel();
         $this->JenisTransaksiModel = new JenisTransaksiModel();
     }
 
     public function Index()
     {
+        $session = session();
         $data = array(
+            'username' => $session->get('username'),
             'title' => 'Mahasiswa',
             'mahasiswa' => $this->MahasiswaModel->getMhs(),
+            'badges' => $this->BadgesModel->getBadges(),
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
         );
         return view('Mahasiswa/mahasiswa', $data);
@@ -30,7 +35,7 @@ class Mahasiswa extends BaseController
     public function save_Mhs()
     {
         if (!$this->validate([
-            'nama' => 'required|is_unique[badges.nama]'
+            'nama' => 'required|is_unique[mahasiswa.nama]'
         ])) {
             session()->setFlashdata("gagal", "Data Sudah Ada !");
         }
@@ -45,7 +50,7 @@ class Mahasiswa extends BaseController
             'id' => $id,
             'nama' => $nama,
             'npm' => $npm,
-            'point' => 10,
+            'point' => 30,
             // 'badges' => $badges
         ];
         $this->MahasiswaModel->save($data);
@@ -54,34 +59,26 @@ class Mahasiswa extends BaseController
         return redirect()->back();
     }
 
-    public function update_badges($id_badges)
+    public function update_Mhs($id)
     {
         $nama = $this->request->getPost('nama');
-        $detail = $this->request->getPost('detail');
-        $keterangan = $this->request->getPost('keterangan');
-        $newBadges = $this->request->getFile('badges');
+        $npm = $this->request->getPost('npm');
+        $point = $this->request->getPost('point');
 
         $data = [
             'nama' => $nama,
-            'detail' => $detail,
-            'keterangan' => $keterangan
+            'npm' => $npm,
+            'point' => $point
         ];
 
-        // Periksa apakah ada gambar baru yang diunggah
-        if ($newBadges->isValid() && !$newBadges->hasMoved()) {
-            // Jika ada gambar baru diunggah, simpan gambar baru
-            $newBadges->move(ROOTPATH . 'path_to_your_images_folder');
-            $data['badges'] = $newBadges->getName();
-        }
-
-        $this->MahasiswaModel->update($id_badges, $data);
+        $this->MahasiswaModel->update($id, $data);
 
         session()->setFlashdata("sukses", "Data Berhasil Di Update.");
         return redirect()->back();
     }
 
     //Menghapus data dari database berdasarkan ID
-    public function hapus_Mhs($id)
+    public function delete($id)
     {
         $this->MahasiswaModel->delete($id);
 

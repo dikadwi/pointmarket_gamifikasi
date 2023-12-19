@@ -5,6 +5,7 @@ namespace App\Controllers;
 use App\Models\MarketModel;
 use App\Models\JenisTransaksiModel;
 use App\Models\MahasiswaModel;
+use App\Models\TransaksiModel;
 use App\Models\UserModel;
 
 class Market extends BaseController
@@ -12,10 +13,12 @@ class Market extends BaseController
     protected $MarketModel;
     protected $JenisTransaksiModel;
     protected $MahasiswaModel;
+    protected $TransaksiModel;
 
     public function __construct()
     {
         $this->MarketModel = new MarketModel();
+        $this->TransaksiModel = new TransaksiModel();
         $this->JenisTransaksiModel = new JenisTransaksiModel();
         $this->MahasiswaModel = new MahasiswaModel();
     }
@@ -23,10 +26,12 @@ class Market extends BaseController
     public function index()
     {
 
+        $session = session();
+
         $data = [
+            'username' => $session->get('username'),
             'title' => 'Market',
             'market' => $this->MarketModel->getMarket(),
-            'items' => $this->MarketModel->findAll(),
             'mahasiswa' => $this->MahasiswaModel->findAll(),
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
 
@@ -34,34 +39,43 @@ class Market extends BaseController
         return view('Market/market', $data);
     }
 
-    //     public function buyItem($itemId, $mahasiswaId)
-    //     {
-    //         $itemId = $this->request->getPost('item');
-    //         $mahasiswaId = $this->request->getPost('mahasiswa');
+    public function buyItem()
+    {
+        $session = session();
+        // Pastikan pengguna sudah login dan memiliki poin
+        if ($session->get('isLoggedIn')) {
+            $id = $session->get('id');
 
-    //         // Ambil informasi item yang akan dibeli dari model MahasiswaModel
-    //         $mahasiswaModel = new MahasiswaModel();
-    //         $item = $mahasiswaModel->find($itemId);
+            // Inisialisasi model
+            $mahasiswaModel = new MahasiswaModel();
+            $marketModel = new MarketModel();
 
-    //         // Lakukan validasi apakah mahasiswa memiliki cukup point untuk membeli item
-    //         if ($item && $mahasiswaId) {
-    //             // Ambil informasi mahasiswa dari model MahasiswaModel
-    //             $mahasiswa = $mahasiswaModel->find($mahasiswaId);
+            $mahasiswa = $this->MahasiswaModel->find($id);
 
-    //             if ($mahasiswa['point'] >= $item['point']) {
-    //                 // Kurangi point mahasiswa
-    //                 $newPoint = $mahasiswa['point'] - $item['point'];
-    //                 $mahasiswaModel->update($mahasiswaId, ['point' => $newPoint]);
+            // Dapatkan biaya transaksi dari tabel transaksi
+            $market = $marketModel->getPoint();
 
-    //                 // Lakukan tindakan lain, misalnya menambahkan item ke inventaris mahasiswa
-    //                 // ...
+            if ($mahasiswa && isset($mahasiswa['point']) && $market && isset($market['point_harga']) && $mahasiswa['point'] >= $market['point_harga']) {
+                // Kurangi poin mahasiswa sesuai biaya transaksi
+                $updatedPoint = $mahasiswa['point'] - $market['point_harga'];
+                $mahasiswaModel->update($id, ['point' => $updatedPoint]);
 
-    //                 return redirect()->to('/market')->with('success', 'Item berhasil dibeli.');
-    //             } else {
-    //                 return redirect()->to('/market')->with('error', 'Point tidak cukup untuk membeli item ini.');
-    //             }
-    //         } else {
-    //             return redirect()->to('/market')->with('error', 'Item tidak ditemukan atau kesalahan pada akun mahasiswa.');
-    //         }
-    //     }
+                // Simpan transaksi ke dalam tabel transaksi
+                $transactionData = [
+                    'id' => $id,
+                    'point_harga' => $market['point_harga'],
+                    // ... // Informasi transaksi lainnya
+                ];
+                $marketModel->insert($transactionData);
+
+                $this->MarketModel->updateBarang($id, $market['point_harga']);
+
+                return redirect()->to('/success')->with('success', 'Transaction successful.');
+            } else {
+                return redirect()->back()->with('error', 'Insufficient points.');
+            }
+        }
+
+        return redirect()->back();
+    }
 }

@@ -3,6 +3,7 @@
         <tr>
             <th scope="col">No</th>
             <th scope="col">Nama</th>
+            <th scope="col">Point</th>
             <th scope="col">Detail</th>
             <th scope="col">Keterangan</th>
             <th scope="col">Badges</th>
@@ -15,6 +16,7 @@
             <tr>
                 <td><?= $i++; ?></td>
                 <td><?= $b['nama']; ?></td>
+                <td><?= $b['point']; ?></td>
                 <td><?= $b['detail']; ?></td>
                 <td><?= $b['keterangan']; ?></td>
                 <td>
@@ -62,6 +64,10 @@
                                             <h5 class="card-title"><b>Nama :</b></h5>
                                             <li class="list-group-item">
                                                 <h4><?= $b['nama']; ?></h4>
+                                            </li>
+                                            <h5 class="card-title"><b>Point :</b></h5>
+                                            <li class="list-group-item">
+                                                <h4><?= $b['point']; ?></h4>
                                             </li>
                                             <h5 class="card-title"><b>Detail :</b></h5>
                                             <li class="list-group-item">
@@ -116,6 +122,12 @@
                             <label for="nama" class="col-form-label">Nama</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $b['nama'] ?>" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="point" class="col-form-label">Point</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="point" name="point" value="<?php echo $b['point'] ?>" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')">
                             </div>
                         </div>
                         <div class="form-group ">

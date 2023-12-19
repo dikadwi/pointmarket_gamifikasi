@@ -15,11 +15,9 @@
                 <td><?= $i++; ?></td>
                 <td><?= $m['nama']; ?></td>
                 <td><?= $m['detail']; ?></td>
-                <td><?= $m['point']; ?></td>
+                <td><?= $m['point_harga']; ?></td>
                 <td>
-                    <?php if (in_groups('admin')) : ?>
-                        <a href="/Market/beli/<?= $m['id']; ?>" class="btn btn-success btn-beli">Beli</a>
-                    <?php endif; ?>
+                    <button href="/Market/beli/<?= $m['id']; ?>" class="btn btn-success btn-beli">Beli</button>
                 </td>
             </tr>
         <?php endforeach; ?>

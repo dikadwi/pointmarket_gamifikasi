@@ -20,7 +20,7 @@ class UserModel extends Model
         'email', 'username', 'password_hash', 'reset_hash', 'reset_at', 'reset_expires', 'activate_hash',
         'status', 'status_message', 'active', 'force_pass_reset', 'permissions', 'deleted_at',
     ];
-    // protected $useTimestamps   = true;
+    protected $useTimestamps   = true;
     // protected $validationRules = [
     //     'email'         => 'required|valid_email|is_unique[users.email,id,{id}]',
     //     'username'      => 'required|alpha_numeric_punct|min_length[3]|max_length[30]|is_unique[users.username,id,{id}]',
@@ -75,16 +75,16 @@ class UserModel extends Model
     {
         $group = $this->db->table('auth_groups')->where('name', $groupName)->get()->getFirstRow();
 
-        // $this->assignGroup = $group->id;
+        $this->assignGroup = $group->id;
 
-        if ($group) {
-            $this->assignGroup = $group->id;
-        } else {
-            // Jika grup tidak ditemukan, tambahkan kode untuk menangani situasi ini
-            // Misalnya, throw Exception atau handle kasus yang sesuai
-            // Di sini kita akan memaksa grup menjadi 'users' jika tidak ditemukan grup dengan nama yang diinginkan
-            $this->assignGroup = 2; // ID grup 'users'
-        }
+        // if ($group) {
+        //     $this->assignGroup = $group->id;
+        // } else {
+        //     // Jika grup tidak ditemukan, tambahkan kode untuk menangani situasi ini
+        //     // Misalnya, throw Exception atau handle kasus yang sesuai
+        //     // Di sini kita akan memaksa grup menjadi 'users' jika tidak ditemukan grup dengan nama yang diinginkan
+        //     $this->assignGroup = 2; // ID grup 'users'
+        // }
 
         return $this;
     }

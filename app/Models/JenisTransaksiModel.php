@@ -9,7 +9,7 @@ class JenisTransaksiModel extends Model
 
 
     protected $table = 'jenis_transaksi';
-    protected $primaryKey = 'id_jenis';
+    protected $primaryKey = 'kode_jenis';
     protected $allowedFields = ['nama_transaksi'];
 
     public function getJenis()

@@ -10,10 +10,10 @@ class MahasiswaModel extends Model
 
     protected $table = 'mahasiswa';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nama', 'npm', 'point', 'badges'];
+    protected $allowedFields = ['email', 'nama', 'npm', 'password', 'point', 'created_at', 'updated_at', 'deleted_at'];
 
     // //Dates
-    // protected $useTimestamps = true;
+    protected $useTimestamps = true;
     // protected $dateFormat    = 'datetime';
     // protected $createdField  = 'created_at';
     // protected $updatedField  = 'updated_at';
@@ -24,19 +24,30 @@ class MahasiswaModel extends Model
         return $this->findAll();
     }
 
-    public function saveBadge($data)
+    public function getBadgesP($poin)
     {
-        return $this->insert($data);
+        $badge = '';
+
+        // Logika penentuan badge berdasarkan poin
+        if ($poin >= 1000) {
+            $badge = 'King';
+        } elseif ($poin >= 800) {
+            $badge = 'Diamond';
+        } elseif ($poin >= 600) {
+            $badge = 'Platinum';
+        } elseif ($poin >= 400) {
+            $badge = 'Gold';
+        } elseif ($poin >= 200) {
+            $badge = 'Silver';
+        } else {
+            $badge = 'Master';
+        }
+
+        return $badge;
     }
 
-
-    // public function total()
+    // public function saveBadge($data)
     // {
-    //     return $this->countAll();
-    // }
-
-    // public function getId($id_badges)
-    // {
-    //     return $this->where(['id_badges' => $id_badges])->find();
+    //     return $this->insert($data);
     // }
 }

@@ -12,10 +12,9 @@
                  <img src="/img/admin.jpg" class="img-circle elevation-2" alt="User Image">
              </div>
              <div class="info">
-                 <a href="#" class="d-block"><?= user()->username; ?></a>
+                 <a href="#" class="d-block"><?= $username; ?></a>
              </div>
          </div>
-
 
          <!-- Sidebar Menu -->
          <nav class="mt-5">
@@ -58,30 +57,53 @@
                          </p>
                      </a>
                  </li>
+                 <?php if (in_groups('admin')) : ?>
+                     <li class="nav-item">
+                         <a href="#" class="nav-link">
+                             <i class="nav-icon fas fa-shopping-cart"></i>
+                             <p>
+                                 Transaksi
+                                 <i class="fas fa-angle-left right"></i>
+                             </p>
+                         </a>
+                         <ul class="nav nav-treeview">
+                             <li class="nav-item">
+                                 <a href="/Transaksi/reward" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Rewards
+                                     </p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a href="/Transaksi/pembelian" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Pembelian
+                                     </p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a href="/Transaksi/punishment" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Punishment
+                                     </p>
+                                 </a>
+                             </li>
+                             <li class="nav-item">
+                                 <a href="/Transaksi/misi_tambah" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Misi Tambahan
+                                     </p>
+                                 </a>
+                             </li>
+                         </ul>
+                     </li>
+                 <?php endif; ?>
                  <li class="nav-item">
-                     <a href="#" class="nav-link">
-                         <i class="nav-icon fas fa-shopping-cart"></i>
-                         <p>
-                             Transaksi
-                             <i class="fas fa-angle-left right"></i>
+                     <a href="/Transaksi/badges" class="nav-link">
+                         <i class="nav-icon fas fa-ribbon"></i>
+                         <p>Badges
                          </p>
                      </a>
-                     <ul class="nav nav-treeview">
-                         <li class="nav-item">
-                             <a href="/Transaksi/badges" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Badges
-                                 </p>
-                             </a>
-                         </li>
-                         <li class="nav-item">
-                             <a href="#Rewards" class="nav-link">
-                                 <i class="far fa-circle nav-icon"></i>
-                                 <p>Rewards
-                                 </p>
-                             </a>
-                         </li>
-                     </ul>
                  </li>
                  <li class="nav-item">
                      <a href="#" class="nav-link">
@@ -91,6 +113,14 @@
                          </p>
                      </a>
                  </li>
+                 <!-- <li class="nav-item">
+                     <a href="/gamifikasi" class="nav-link">
+                         <i class="nav-icon fas fa-minus"></i>
+                         <p>
+                             Gamifikasi
+                         </p>
+                     </a>
+                 </li> -->
                  <!-- <li class="nav-item">
                      <a href="/Admin/data" class="nav-link">
                          <i class="nav-icon fas fa-university"></i>
@@ -124,14 +154,7 @@
                          </p>
                      </a>
                  </li> -->
-                 <li class="nav-item">
-                     <a href="/gamifikasi" class="nav-link">
-                         <i class="nav-icon fas fa-minus"></i>
-                         <p>
-                             Gamifikasi
-                         </p>
-                     </a>
-                 </li>
+
              </ul>
          </nav>
          <!-- /.sidebar-menu -->

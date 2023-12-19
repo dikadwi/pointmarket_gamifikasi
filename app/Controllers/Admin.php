@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\BadgesModel;
 use App\Models\KendaraanModel;
 use App\Models\JenisModel;
 use App\Models\JenisTransaksiModel;
@@ -27,7 +28,7 @@ class Admin extends BaseController
     protected $ScanModel;
     protected $JenisTransaksiModel;
     protected $TransaksiModel;
-
+    protected $BadgesModel;
 
     public function __construct()
     {
@@ -37,15 +38,21 @@ class Admin extends BaseController
         $this->ScanModel = new ScanModel();
         $this->JenisTransaksiModel = new JenisTransaksiModel();
         $this->TransaksiModel = new TransaksiModel();
+        $this->BadgesModel = new BadgesModel();
     }
-
 
     //Menampilkan halaman utama
     public function index()
     {
+        $session = session();
+
         $data = array(
+            'username' => $session->get('username'),
             'title' => 'Point Market',
             'totaldata' => $this->KendaraanModel->total(),
+            'totalReward' => $this->TransaksiModel->totalReward(),
+            'totalChallanges' => $this->TransaksiModel->totalChallanges(),
+            'totalBadges' => $this->BadgesModel->totalBadges(),
             'totaluser' => $this->UserModel->total(),
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
         );
@@ -56,7 +63,9 @@ class Admin extends BaseController
     // Menampilkan semua data user
     public function user()
     {
+        $session = session();
         $data = array(
+            'username' => $session->get('username'),
             'title' => 'Data Pengguna',
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
         );
@@ -79,7 +88,10 @@ class Admin extends BaseController
     public function detail($id)
     {
 
+        $session = session();
+
         $data = array(
+            'username' => $session->get('username'),
             'title' => 'Detail',
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
         );
@@ -260,7 +272,7 @@ class Admin extends BaseController
     public function save_transaksi()
     {
         if (!$this->validate([
-            'nama' => 'required|is_unique[data_kendaraan.nama]'
+            'nama' => 'required|is_unique[transaksi.nama]'
         ])) {
             session()->setFlashdata("gagal", "Data Sudah Ada !");
         }
@@ -282,6 +294,27 @@ class Admin extends BaseController
         session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
 
         $this->TransaksiModel->save($data);
+        return redirect()->back();
+    }
+
+    public function save_jenistransaksi()
+    {
+        if (!$this->validate([
+            'nama_transaksi' => 'required|is_unique[jenis_transaksi.nama_transaksi]'
+        ])) {
+            session()->setFlashdata("gagal", "Data Sudah Ada !");
+        }
+        $id_jenis = $this->request->getVar('id_jenis');
+        $nama_transaksi = $this->request->getVar('nama_transaksi');
+
+        $data = [
+            'id_jenis' => $id_jenis,
+            'nama_transaksi' => $nama_transaksi,
+        ];
+
+        session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
+
+        $this->JenisTransaksiModel->save($data);
         return redirect()->back();
     }
 
@@ -347,18 +380,4 @@ class Admin extends BaseController
 
         return redirect()->back();
     }
-
-
-
-    // public function detail_data($id)
-    // {
-    //     $data['title'] = 'Detail Data';
-    //     $db      = \Config\Database::connect();
-    //     $builder = $db->table('data_kendaraan');
-    //     $builder->where('id', $id);
-    //     $query = $builder->get();
-    //     $data['data'] = $query->getRow();
-
-    //     return view('Admin/Data_Kendaraan/Roda_2/detail', $data);
-    // }
 }

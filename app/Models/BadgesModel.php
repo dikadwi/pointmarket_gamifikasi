@@ -10,7 +10,7 @@ class BadgesModel extends Model
 
     protected $table = 'badges';
     protected $primaryKey = 'id_badges';
-    protected $allowedFields = ['nama', 'detail', 'keterangan', 'badges'];
+    protected $allowedFields = ['nama', 'point', 'detail', 'keterangan', 'badges'];
 
     // //Dates
     // protected $useTimestamps = true;
@@ -24,11 +24,17 @@ class BadgesModel extends Model
         return $this->findAll();
     }
 
+
+
     public function saveBadge($data)
     {
         return $this->insert($data);
     }
 
+    public function totalBadges()
+    {
+        return $this->countAll();
+    }
 
     // public function total()
     // {

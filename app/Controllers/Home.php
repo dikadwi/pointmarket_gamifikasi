@@ -35,7 +35,7 @@ class Home extends BaseController
         $data = [
             'scan' => $this->ScanModel->findAll()
         ];
-        echo view('Admin/scan', $data);
+        echo view('scan', $data);
     }
 
     public function save()
