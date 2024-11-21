@@ -7,7 +7,8 @@
     <div class="content-header">
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalTambahMahasiswa">Input</button>
         <h3>
-            <center>Data Mahasiswa<center>
+            <!-- <center>Data Mahasiswa<center> -->
+            <center>Data User (Mahasiswa)<center>
         </h3>
     </div>
 
@@ -27,13 +28,14 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Tambah Data Mahasiswa</h5>
+                <!-- <h5 class="modal-title" id="staticBackdropLabel">Tambah Data Mahasiswa</h5> -->
+                <h5 class="modal-title" id="staticBackdropLabel">Tambah Data User</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/Mahasiswa/save_Mhs" method="post" enctype="multipart/form-data">
+                <form action="/User/save_Mhs" method="post" enctype="multipart/form-data">
                     <div class="form-group ">
                         <label for="id" class="col-form-label"></label>
                         <div class="col-sm-10">
@@ -41,13 +43,15 @@
                         </div>
                     </div>
                     <div class="form-group ">
-                        <label for="nama" class="col-form-label">Nama Mahasiswa</label>
+                        <!-- <label for="nama" class="col-form-label">Nama Mahasiswa</label> -->
+                        <label for="nama" class="col-form-label">Nama</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" id="nama" name="nama" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div>
                     <div class="form-group ">
-                        <label for="npm" class="col-form-label">NPM</label>
+                        <!-- <label for="npm" class="col-form-label">NPM</label> -->
+                        <label for="npm" class="col-form-label">User ID</label>
                         <div class="col-sm-10">
                             <input type="number" class="form-control" id="npm" name="npm" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
                         </div>

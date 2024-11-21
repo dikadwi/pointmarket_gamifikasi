@@ -37,7 +37,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="/Transaksi/save_badges" method="post" enctype="multipart/form-data">
+                <form action="/Badges/save_badges" method="post" enctype="multipart/form-data">
                     <div class="form-group ">
                         <label for="nama" class="col-form-label">Nama</label>
                         <div class="col-sm-10">

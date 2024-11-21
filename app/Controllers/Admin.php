@@ -3,9 +3,11 @@
 namespace App\Controllers;
 
 use App\Models\BadgesModel;
+use App\Models\DataTransaksiModel;
 use App\Models\KendaraanModel;
 use App\Models\JenisModel;
 use App\Models\JenisTransaksiModel;
+use App\Models\MahasiswaModel;
 use App\Models\TransaksiModel;
 use App\Models\ScanModel;
 use App\Models\UserModel;
@@ -27,8 +29,10 @@ class Admin extends BaseController
     protected $UserModel;
     protected $ScanModel;
     protected $JenisTransaksiModel;
+    protected $DataTransaksiModel;
     protected $TransaksiModel;
     protected $BadgesModel;
+    protected $MahasiswaModel;
 
     public function __construct()
     {
@@ -37,8 +41,10 @@ class Admin extends BaseController
         $this->UserModel = new UserModel();
         $this->ScanModel = new ScanModel();
         $this->JenisTransaksiModel = new JenisTransaksiModel();
+        $this->DataTransaksiModel = new DataTransaksiModel();
         $this->TransaksiModel = new TransaksiModel();
         $this->BadgesModel = new BadgesModel();
+        $this->MahasiswaModel = new MahasiswaModel();
     }
 
     //Menampilkan halaman utama
@@ -46,29 +52,36 @@ class Admin extends BaseController
     {
         $session = session();
 
-        $data = array(
-            'username' => $session->get('username'),
+        $data = [
             'title' => 'Point Market',
-            'totaldata' => $this->KendaraanModel->total(),
-            'totalReward' => $this->TransaksiModel->totalReward(),
-            'totalChallanges' => $this->TransaksiModel->totalChallanges(),
-            'totalBadges' => $this->BadgesModel->totalBadges(),
-            'totaluser' => $this->UserModel->total(),
+            'username' => $session->get('username'),
+            // 'totaldata' => $this->KendaraanModel->total(),
+            'totalReward' => $this->DataTransaksiModel->totalReward(),
+            'totalPembelian' => $this->DataTransaksiModel->totalPembelian(),
+            'totalPunishment' => $this->DataTransaksiModel->totalPunishment(),
+            'totalMisi' => $this->DataTransaksiModel->totalMisi(),
+            'transactions' => $this->DataTransaksiModel->getTransactionsByCategory(),
+            // 'totalBadges' => $this->BadgesModel->totalBadges(),
+            // 'totaluser' => $this->MahasiswaModel->total(),
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
-        );
+            'badges' => $this->BadgesModel->getBadges(),
+            'mahasiswa' => $this->MahasiswaModel->getMhs(),
+        ];
 
         return view('index', $data);
     }
+
+
 
     // Menampilkan semua data user
     public function user()
     {
         $session = session();
-        $data = array(
+        $data = [
             'username' => $session->get('username'),
             'title' => 'Data Pengguna',
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
-        );
+        ];
         // $users = new \Myth\Auth\Models\UserModel();
         // $data['users'] = $users->findAll();
 
@@ -90,11 +103,11 @@ class Admin extends BaseController
 
         $session = session();
 
-        $data = array(
+        $data = [
             'username' => $session->get('username'),
             'title' => 'Detail',
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
-        );
+        ];
         // $users = new \Myth\Auth\Models\UserModel();
         // $data['users'] = $users->findAll();
 
@@ -111,273 +124,276 @@ class Admin extends BaseController
         return view('Data_User/detail', $data);
     }
 
-    //Menampilkan Semua Data
-    public function data()
-    {
-        $data = [
-            'title' => 'Data Kendaraan',
-            'jenis' => $this->JenisModel->getJenis(),
-            'roda' => $this->KendaraanModel->getRoda()
-        ];
+    // public function save_transaksi()
+    // {
+    //     if (!$this->validate([
+    //         'nama' => 'required|is_unique[transaksi.nama]'
+    //     ])) {
+    //         session()->setFlashdata("gagal", "Data Sudah Ada !");
+    //     }
 
-        return view('Admin/Data_Kendaraan/data_semua', $data);
-    }
+    //     $kode_jenis = $this->request->getVar('kode_jenis');
+    //     $nama = $this->request->getVar('nama');
+    //     $detail = $this->request->getVar('detail');
+    //     $keterangan = $this->request->getVar('keterangan');
+    //     $point = $this->request->getVar('point');
 
-    //Menampilkan data dengan jenis terpilih (Roda2)
-    public function roda2()
-    {
+    //     $data = [
+    //         'kode_jenis' => $kode_jenis,
+    //         'nama' => $nama,
+    //         'detail' => $detail,
+    //         'keterangan' => $keterangan,
+    //         'point' => $point
+    //     ];
 
-        $db      = \Config\Database::connect();
-        $builder = $db->table('data_kendaraan');
-        $jenis = ['Roda 2'];
-        $builder->whereIn('jenis_kendaraan', $jenis);
+    //     session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
 
-        $data = [
-            'title' => 'Data Kendaraan Roda 2',
-            'jenis' => $this->JenisModel->getJenis(),
-            'roda' => $this->KendaraanModel->getRoda($jenis)
-        ];
+    //     $this->TransaksiModel->save($data);
+    //     return redirect()->back();
+    // }
 
-        return view('Admin/Data_Kendaraan/Roda2', $data);
-    }
+    // public function save_jenistransaksi()
+    // {
+    //     if (!$this->validate([
+    //         'nama_transaksi' => 'required|is_unique[jenis_transaksi.nama_transaksi]'
+    //     ])) {
+    //         session()->setFlashdata("gagal", "Data Sudah Ada !");
+    //     }
+    //     $id_jenis = $this->request->getVar('id_jenis');
+    //     $nama_transaksi = $this->request->getVar('nama_transaksi');
 
-    //Menampilkan data dengan jenis terpilih (Roda4)
-    public function roda4()
-    {
+    //     $data = [
+    //         'id_jenis' => $id_jenis,
+    //         'nama_transaksi' => $nama_transaksi,
+    //     ];
 
-        $db      = \Config\Database::connect();
-        $builder = $db->table('data_kendaraan');
-        $jenis = ['Roda 4'];
-        $builder->whereIn('jenis_kendaraan', $jenis);
+    //     session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
 
-        $data = [
-            'title' => 'Data Kendaraan Roda 4',
-            'jenis' => $this->JenisModel->getJenis(),
-            'roda' => $this->KendaraanModel->getRoda($jenis)
-        ];
+    //     $this->JenisTransaksiModel->save($data);
+    //     return redirect()->back();
+    // }
 
-        return view('Admin/Data_Kendaraan/Roda4', $data);
-    }
 
-    //Menampilkan data kendaraan masuk
-    public function masuk()
-    {
+    // //Menampilkan Semua Data
+    // public function data()
+    // {
+    //     $data = [
+    //         'title' => 'Data Kendaraan',
+    //         'jenis' => $this->JenisModel->getJenis(),
+    //         'roda' => $this->KendaraanModel->getRoda()
+    //     ];
 
-        $data = [
-            'title' => 'Data Kendaraan',
-            // 'jenis' => $this->JenisModel->getJenis(),
-            // 'roda' => $this->KendaraanModel->getRoda(),
-            'scan' => $this->ScanModel->findAll(),
-        ];
+    //     return view('Admin/Data_Kendaraan/data_semua', $data);
+    // }
 
-        return view('Admin/Data_Kendaraan/kendaraan_masuk', $data);
-    }
+    // //Menampilkan data dengan jenis terpilih (Roda2)
+    // public function roda2()
+    // {
 
-    //Melakukan convert pdf
-    public function printpdf()
-    {
-        $data = [
-            'roda' => $this->KendaraanModel->findAll(),
-        ];
-        // return view('Admin/pdf', $data);
+    //     $db      = \Config\Database::connect();
+    //     $builder = $db->table('data_kendaraan');
+    //     $jenis = ['Roda 2'];
+    //     $builder->whereIn('jenis_kendaraan', $jenis);
 
-        $dompdf = new Dompdf();
+    //     $data = [
+    //         'title' => 'Data Kendaraan Roda 2',
+    //         'jenis' => $this->JenisModel->getJenis(),
+    //         'roda' => $this->KendaraanModel->getRoda($jenis)
+    //     ];
 
-        $html = view('Admin/pdf/pdf', $data);
-        $dompdf->loadHtml($html);
-        $dompdf->setPaper('A4', 'portrait');
-        $dompdf->render();
-        $dompdf->stream('data_kendaraan.pdf', array("Attachment" => false));
-    }
+    //     return view('Admin/Data_Kendaraan/Roda2', $data);
+    // }
 
-    //Melakukan convert pdf sesuai id
-    public function cetakpdf($id)
-    {
-        $data = [
-            'roda' => $this->KendaraanModel->getId($id),
-        ];
-        // return view('Admin/pdf/cetak', $data);
+    // //Menampilkan data dengan jenis terpilih (Roda4)
+    // public function roda4()
+    // {
 
-        $dompdf = new Dompdf();
+    //     $db      = \Config\Database::connect();
+    //     $builder = $db->table('data_kendaraan');
+    //     $jenis = ['Roda 4'];
+    //     $builder->whereIn('jenis_kendaraan', $jenis);
 
-        $html = view('Admin/pdf/cetak', $data);
-        $dompdf->loadHtml($html);
-        $dompdf->setPaper('A4', 'portrait');
-        $dompdf->render();
-        $dompdf->stream('detail.pdf', array("Attachment" => false));
-    }
+    //     $data = [
+    //         'title' => 'Data Kendaraan Roda 4',
+    //         'jenis' => $this->JenisModel->getJenis(),
+    //         'roda' => $this->KendaraanModel->getRoda($jenis)
+    //     ];
 
-    //Menyimpan Data Baru ke database dan Generate QRCode
-    public function save_data()
-    {
-        if (!$this->validate([
-            'nama' => 'required|is_unique[data_kendaraan.nama]'
-        ])) {
-            session()->setFlashdata("gagal", "Data Sudah Ada !");
-        }
+    //     return view('Admin/Data_Kendaraan/Roda4', $data);
+    // }
 
-        $id = $this->request->getVar('id');
-        $nama = $this->request->getVar('nama');
-        $jenis = $this->request->getVar('jenis');
-        $no_kendaraan = $this->request->getVar('no_kendaraan');
-        $merk = $this->request->getVar('merk');
-        $tipe = $this->request->getVar('tipe');
+    // //Menampilkan data kendaraan masuk
+    // public function masuk()
+    // {
 
-        $writer = new PngWriter();
-        //Create QRCode
-        // $qrCode = QrCode::create('Nama :' . $nama . '_No-Kend :' . $no_kendaraan . '_Jenis :' . $jenis . '_Merk :' . $merk . '_Tipe :' . $tipe)
-        $qrCode = QrCode::create($nama)
-            ->setEncoding(new Encoding('UTF-8'))
-            ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
-            ->setSize(300)
-            ->setMargin(10)
-            ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin())
-            ->setForegroundColor(new Color(0, 0, 0))
-            ->setBackgroundColor(new Color(255, 255, 255));
+    //     $data = [
+    //         'title' => 'Data Kendaraan',
+    //         // 'jenis' => $this->JenisModel->getJenis(),
+    //         // 'roda' => $this->KendaraanModel->getRoda(),
+    //         'scan' => $this->ScanModel->findAll(),
+    //     ];
 
-        // Create generic logo
-        $logo = null;
+    //     return view('Admin/Data_Kendaraan/kendaraan_masuk', $data);
+    // }
 
-        // Create generic label
-        $label = Label::create($nama)
-            ->setTextColor(new Color(255, 0, 0));
+    // //Melakukan convert pdf
+    // public function printpdf()
+    // {
+    //     $data = [
+    //         'roda' => $this->KendaraanModel->findAll(),
+    //     ];
+    //     // return view('Admin/pdf', $data);
 
-        $result = $writer->write($qrCode, $logo, $label);
+    //     $dompdf = new Dompdf();
 
-        // Save it to a file
-        $result->saveToFile('img/qrcode/ ' . $nama . '.png');
+    //     $html = view('Admin/pdf/pdf', $data);
+    //     $dompdf->loadHtml($html);
+    //     $dompdf->setPaper('A4', 'portrait');
+    //     $dompdf->render();
+    //     $dompdf->stream('data_kendaraan.pdf', array("Attachment" => false));
+    // }
 
-        // $result = file_get_contents($file);
-        // $result = str_replace('img\qrcode', 'qrcode' . APP_NAMESPACE, $result);
-        // file_put_contents($file, $result);
+    // //Melakukan convert pdf sesuai id
+    // public function cetakpdf($id)
+    // {
+    //     $data = [
+    //         'roda' => $this->KendaraanModel->getId($id),
+    //     ];
+    //     // return view('Admin/pdf/cetak', $data);
 
-        $qr = $result->getDataUri();
+    //     $dompdf = new Dompdf();
 
-        $data = [
-            'id' => $id,
-            'nama' => $nama,
-            'jenis' => $jenis,
-            'no_kendaraan' => $no_kendaraan,
-            'merk' => $merk,
-            'tipe' => $tipe,
-            'qr_code' => $qr
-        ];
+    //     $html = view('Admin/pdf/cetak', $data);
+    //     $dompdf->loadHtml($html);
+    //     $dompdf->setPaper('A4', 'portrait');
+    //     $dompdf->render();
+    //     $dompdf->stream('detail.pdf', array("Attachment" => false));
+    // }
 
-        session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
+    // //Menyimpan Data Baru ke database dan Generate QRCode
+    // public function save_data()
+    // {
+    //     if (!$this->validate([
+    //         'nama' => 'required|is_unique[data_kendaraan.nama]'
+    //     ])) {
+    //         session()->setFlashdata("gagal", "Data Sudah Ada !");
+    //     }
 
-        $this->KendaraanModel->save($data);
-        return redirect()->back();
-    }
+    //     $id = $this->request->getVar('id');
+    //     $nama = $this->request->getVar('nama');
+    //     $jenis = $this->request->getVar('jenis');
+    //     $no_kendaraan = $this->request->getVar('no_kendaraan');
+    //     $merk = $this->request->getVar('merk');
+    //     $tipe = $this->request->getVar('tipe');
 
-    public function save_transaksi()
-    {
-        if (!$this->validate([
-            'nama' => 'required|is_unique[transaksi.nama]'
-        ])) {
-            session()->setFlashdata("gagal", "Data Sudah Ada !");
-        }
+    //     $writer = new PngWriter();
+    //     //Create QRCode
+    //     // $qrCode = QrCode::create('Nama :' . $nama . '_No-Kend :' . $no_kendaraan . '_Jenis :' . $jenis . '_Merk :' . $merk . '_Tipe :' . $tipe)
+    //     $qrCode = QrCode::create($nama)
+    //         ->setEncoding(new Encoding('UTF-8'))
+    //         ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
+    //         ->setSize(300)
+    //         ->setMargin(10)
+    //         ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin())
+    //         ->setForegroundColor(new Color(0, 0, 0))
+    //         ->setBackgroundColor(new Color(255, 255, 255));
 
-        $id_jenis = $this->request->getVar('id_jenis');
-        $nama = $this->request->getVar('nama');
-        $detail = $this->request->getVar('detail');
-        $keterangan = $this->request->getVar('keterangan');
-        $point = $this->request->getVar('point');
+    //     // Create generic logo
+    //     $logo = null;
 
-        $data = [
-            'id_jenis' => $id_jenis,
-            'nama' => $nama,
-            'detail' => $detail,
-            'keterangan' => $keterangan,
-            'point' => $point
-        ];
+    //     // Create generic label
+    //     $label = Label::create($nama)
+    //         ->setTextColor(new Color(255, 0, 0));
 
-        session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
+    //     $result = $writer->write($qrCode, $logo, $label);
 
-        $this->TransaksiModel->save($data);
-        return redirect()->back();
-    }
+    //     // Save it to a file
+    //     $result->saveToFile('img/qrcode/ ' . $nama . '.png');
 
-    public function save_jenistransaksi()
-    {
-        if (!$this->validate([
-            'nama_transaksi' => 'required|is_unique[jenis_transaksi.nama_transaksi]'
-        ])) {
-            session()->setFlashdata("gagal", "Data Sudah Ada !");
-        }
-        $id_jenis = $this->request->getVar('id_jenis');
-        $nama_transaksi = $this->request->getVar('nama_transaksi');
+    //     // $result = file_get_contents($file);
+    //     // $result = str_replace('img\qrcode', 'qrcode' . APP_NAMESPACE, $result);
+    //     // file_put_contents($file, $result);
 
-        $data = [
-            'id_jenis' => $id_jenis,
-            'nama_transaksi' => $nama_transaksi,
-        ];
+    //     $qr = $result->getDataUri();
 
-        session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
+    //     $data = [
+    //         'id' => $id,
+    //         'nama' => $nama,
+    //         'jenis' => $jenis,
+    //         'no_kendaraan' => $no_kendaraan,
+    //         'merk' => $merk,
+    //         'tipe' => $tipe,
+    //         'qr_code' => $qr
+    //     ];
 
-        $this->JenisTransaksiModel->save($data);
-        return redirect()->back();
-    }
+    //     session()->setFlashdata("sukses", "Data Berhasil Ditambah.");
 
-    //Mengupdate data dan disimpan ke database dan Generate ulang QRCode
-    public function update_data($id)
-    {
+    //     $this->KendaraanModel->save($data);
+    //     return redirect()->back();
+    // }
 
-        $id = $this->request->getVar('id');
-        $nama = $this->request->getVar('nama');
-        $jenis = $this->request->getVar('jenis');
-        $no_kendaraan = $this->request->getVar('no_kendaraan');
-        $merk = $this->request->getVar('merk');
-        $tipe = $this->request->getVar('tipe');
+    // //Mengupdate data dan disimpan ke database dan Generate ulang QRCode
+    // public function update_data($id)
+    // {
 
-        $writer = new PngWriter();
-        //Create QRCode
-        // $qrCode = QrCode::create($nama . '_' . $no_kendaraan . '_' . $jenis . '_' . $merk . '_' . $tipe)
-        $qrCode = QrCode::create($nama)
-            ->setEncoding(new Encoding('UTF-8'))
-            ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
-            ->setSize(300)
-            ->setMargin(10)
-            ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin())
-            ->setForegroundColor(new Color(0, 0, 0))
-            ->setBackgroundColor(new Color(255, 255, 255));
+    //     $id = $this->request->getVar('id');
+    //     $nama = $this->request->getVar('nama');
+    //     $jenis = $this->request->getVar('jenis');
+    //     $no_kendaraan = $this->request->getVar('no_kendaraan');
+    //     $merk = $this->request->getVar('merk');
+    //     $tipe = $this->request->getVar('tipe');
 
-        // Create generic logo
-        $logo = null;
+    //     $writer = new PngWriter();
+    //     //Create QRCode
+    //     // $qrCode = QrCode::create($nama . '_' . $no_kendaraan . '_' . $jenis . '_' . $merk . '_' . $tipe)
+    //     $qrCode = QrCode::create($nama)
+    //         ->setEncoding(new Encoding('UTF-8'))
+    //         ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
+    //         ->setSize(300)
+    //         ->setMargin(10)
+    //         ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin())
+    //         ->setForegroundColor(new Color(0, 0, 0))
+    //         ->setBackgroundColor(new Color(255, 255, 255));
 
-        // Create generic label
-        $label = Label::create($nama)
-            ->setTextColor(new Color(255, 0, 0));
+    //     // Create generic logo
+    //     $logo = null;
 
-        $result = $writer->write($qrCode, $logo, $label);
+    //     // Create generic label
+    //     $label = Label::create($nama)
+    //         ->setTextColor(new Color(255, 0, 0));
 
-        $qr = $result->getDataUri();
+    //     $result = $writer->write($qrCode, $logo, $label);
 
-        // Save it to a file
-        $result->saveToFile('img/qrcode/ ' . $nama . '.png');
+    //     $qr = $result->getDataUri();
 
-        $data = [
-            'id' => $id,
-            'nama' => $nama,
-            'jenis' => $jenis,
-            'no_kendaraan' => $no_kendaraan,
-            'merk' => $merk,
-            'tipe' => $tipe,
-            'qr_code' => $qr
-        ];
+    //     // Save it to a file
+    //     $result->saveToFile('img/qrcode/ ' . $nama . '.png');
 
-        session()->setFlashdata("sukses", "Data Berhasil Diupdate.");
+    //     $data = [
+    //         'id' => $id,
+    //         'nama' => $nama,
+    //         'jenis' => $jenis,
+    //         'no_kendaraan' => $no_kendaraan,
+    //         'merk' => $merk,
+    //         'tipe' => $tipe,
+    //         'qr_code' => $qr
+    //     ];
 
-        $this->KendaraanModel->save($data);
-        return redirect()->back();
-    }
+    //     session()->setFlashdata("sukses", "Data Berhasil Diupdate.");
 
-    //Menghapus data dari database berdasarkan ID
-    public function hapus_data($id)
-    {
-        $this->KendaraanModel->delete($id);
+    //     $this->KendaraanModel->save($data);
+    //     return redirect()->back();
+    // }
 
-        session()->setFlashdata("sukses", "Data Berhasil Dihapus.");
+    // //Menghapus data dari database berdasarkan ID
+    // public function hapus_data($id)
+    // {
+    //     $this->KendaraanModel->delete($id);
 
-        return redirect()->back();
-    }
+    //     session()->setFlashdata("sukses", "Data Berhasil Dihapus.");
+
+    //     return redirect()->back();
+    // }
+
+
 }

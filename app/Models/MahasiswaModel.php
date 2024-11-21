@@ -19,6 +19,11 @@ class MahasiswaModel extends Model
     // protected $updatedField  = 'updated_at';
     // protected $deletedField  = 'deleted_at';
 
+    public function total()
+    {
+        return $this->countAll();
+    }
+
     public function getMhs()
     {
         return $this->findAll();
@@ -45,6 +50,12 @@ class MahasiswaModel extends Model
 
         return $badge;
     }
+
+    public function getPoinByNPM($npm)
+    {
+        return $this->where('npm', $npm)->first();
+    }
+
 
     // public function saveBadge($data)
     // {

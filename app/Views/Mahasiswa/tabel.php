@@ -1,13 +1,27 @@
 <table class="table table-bordered border-dark">
     <thead class="bg-info">
-        <tr>
+        <!-- <tr>
             <th scope="col">No</th>
             <th scope="col">Nama Mahasiswa</th>
             <th scope="col">NPM</th>
             <th scope="col">Point</th>
             <th scope="col">Level</th>
             <th scope="col">Badges</th>
-            <th scope="col" colspan="2">Aksi</th>
+            <th scope="col" colspan="3">Aksi</th>
+        </tr> -->
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Nama</th>
+            <th scope="col">User ID</th>
+            <th scope="col">Gaya Belajar</th>
+            <th scope="col">Point</th>
+            <th scope="col">Rewads</th>
+            <th scope="col">Pembelian</th>
+            <th scope="col">Punishment</th>
+            <th scope="col">Misi Tambahan</th>
+            <th scope="col">Level</th>
+            <th scope="col">Badges</th>
+            <th scope="col" colspan="3">Aksi</th>
         </tr>
     </thead>
     <tbody>
@@ -17,7 +31,12 @@
                 <td><?= $i++; ?></td>
                 <td><?= $m['nama']; ?></td>
                 <td><?= $m['npm']; ?></td>
+                <td>-</td>
                 <td><?= $m['point']; ?></td>
+                <td><?= isset($reward[$m['npm']]) ? $reward[$m['npm']] : 0; ?> </td>
+                <td><?= isset($pembelian[$m['npm']]) ? $pembelian[$m['npm']] : 0; ?></td>
+                <td><?= isset($punishment[$m['npm']]) ? $punishment[$m['npm']] : 0; ?></td>
+                <td><?= isset($misi[$m['npm']]) ? $misi[$m['npm']] : 0; ?></td>
                 <td>
                     <?php
                     $selectedBadge = null;
@@ -32,34 +51,41 @@
                     if ($selectedBadge !== null) {
                         echo $selectedBadge['nama'];
                     } else {
-                        echo 'Tidak ada badge';
+                        echo 'Tidak ada Level';
                     }
                     ?>
                 </td>
                 <td>
-                    <?php
-                    $selectedBadge = null;
-                    foreach ($badges as $badge) {
-                        if ($m['point'] >= $badge['point']) {
-                            $selectedBadge = $badge;
-                        } else {
-                            break; // Menghentikan iterasi jika poin mahasiswa tidak cukup untuk badge berikutnya
+                    <center>
+                        <?php
+                        $selectedBadge = null;
+                        foreach ($badges as $badge) {
+                            if ($m['point'] >= $badge['point']) {
+                                $selectedBadge = $badge;
+                            } else {
+                                break; // Menghentikan iterasi jika poin mahasiswa tidak cukup untuk badge berikutnya
+                            }
                         }
-                    }
 
-                    if ($selectedBadge !== null) {
-                        echo '<img src="data:image/png;base64,' . base64_encode($selectedBadge['badges']) . '" width="100">';
-                    } else {
-                        echo 'Tidak ada badge';
-                    }
-                    ?>
+                        if ($selectedBadge !== null) {
+                            echo '<img src="data:image/png;base64,' . base64_encode($selectedBadge['badges']) . '" width="100">';
+                        } else {
+                            echo 'Tidak ada badge';
+                        }
+                        ?>
+                    </center>
                 </td>
                 <td>
                     <button type=" button" class="btn btn-info" data-toggle="modal" data-target="#modalDetail<?php echo $m['id']; ?>">Detail</button>
-                    <?php if (in_groups('admin')) : ?>
+                </td>
+                <?php if (in_groups('admin')) : ?>
+                    <td>
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalEdit<?php echo $m['id']; ?>">Edit</button>
-                        <button href="/Mahasiswa/delete/<?= $m['id']; ?>" class="btn btn-danger btn-hapus">Hapus</button>
-                    <?php endif; ?>
+                    </td>
+                    <td>
+                        <button href="/User/delete/<?= $m['id']; ?>" class="btn btn-danger btn-hapus">Hapus</button>
+                    </td>
+                <?php endif; ?>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -94,22 +120,120 @@
                                                     <li class="list-group-item">
                                                         <h4><?= $m['npm']; ?></h4>
                                                     </li>
+                                                    <h5 class="card-title"><b>Gaya Belajar :</b></h5>
+                                                    <li class="list-group-item">
+                                                        <h4>-</h4>
+                                                    </li>
                                                     <h5 class="card-title"><b>Point :</b></h5>
                                                     <li class="list-group-item">
                                                         <h4><?= $m['point']; ?></h4>
                                                     </li>
-                                                    <h5 class="card-title"><b>Level :</b></h5>
+                                                    <table class="table table-bordered border-dark">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Reward</th>
+                                                                <th scope="col">Pembelian</th>
+                                                                <th scope="col">Punishment</th>
+                                                                <th scope="col">Misi Tambahan</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><?= isset($reward[$m['npm']]) ? $reward[$m['npm']] : 0; ?> </td>
+                                                                <td><?= isset($pembelian[$m['npm']]) ? $pembelian[$m['npm']] : 0; ?></td>
+                                                                <td><?= isset($punishment[$m['npm']]) ? $punishment[$m['npm']] : 0; ?></td>
+                                                                <td><?= isset($misi[$m['npm']]) ? $misi[$m['npm']] : 0; ?></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="table table-bordered border-dark">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><b>Level </b></td>
+                                                                <td>
+                                                                    <?php
+                                                                    $selectedBadge = null;
+                                                                    foreach ($badges as $badge) {
+                                                                        if ($m['point'] >= $badge['point']) {
+                                                                            $selectedBadge = $badge;
+                                                                        } else {
+                                                                            break; // Menghentikan iterasi jika poin mahasiswa tidak cukup untuk badge berikutnya
+                                                                        }
+                                                                    }
+
+                                                                    if ($selectedBadge !== null) {
+                                                                        echo $selectedBadge['nama'];
+                                                                    } else {
+                                                                        echo 'Tidak ada badge';
+                                                                    }
+                                                                    ?>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><b>Badges </b></td>
+                                                                <td>
+                                                                    <?php
+                                                                    $selectedBadge = null;
+                                                                    foreach ($badges as $badge) {
+                                                                        if ($m['point'] >= $badge['point']) {
+                                                                            $selectedBadge = $badge;
+                                                                        } else {
+                                                                            break; // Menghentikan iterasi jika poin mahasiswa tidak cukup untuk badge berikutnya
+                                                                        }
+                                                                    }
+
+                                                                    if ($selectedBadge !== null) {
+                                                                        echo '<img src="data:image/png;base64,' . base64_encode($selectedBadge['badges']) . '" width="100">';
+                                                                    } else {
+                                                                        echo 'Tidak ada badge';
+                                                                    }
+                                                                    ?>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- <h5 class="card-title"><b>Level :</b></h5>
                                                     <li class="list-group-item">
-                                                        <h4></h4>
+                                                        <h4>
+                                                            <?php
+                                                            $selectedBadge = null;
+                                                            foreach ($badges as $badge) {
+                                                                if ($m['point'] >= $badge['point']) {
+                                                                    $selectedBadge = $badge;
+                                                                } else {
+                                                                    break; // Menghentikan iterasi jika poin mahasiswa tidak cukup untuk badge berikutnya
+                                                                }
+                                                            }
+
+                                                            if ($selectedBadge !== null) {
+                                                                echo $selectedBadge['nama'];
+                                                            } else {
+                                                                echo 'Tidak ada badge';
+                                                            }
+                                                            ?>
+                                                        </h4>
                                                     </li>
                                                     <h5 class="card-title"><b>Badges :</b></h5>
                                                     <li class="list-group-item">
                                                         <center>
-                                                            <?php if ($b['badges']) : ?>
-                                                                <img src="data:image/png;base64,<?= base64_encode($b['badges']); ?>" alt="Badge Image" width="100">
-                                                            <?php endif; ?>
+                                                            <?php
+                                                            $selectedBadge = null;
+                                                            foreach ($badges as $badge) {
+                                                                if ($m['point'] >= $badge['point']) {
+                                                                    $selectedBadge = $badge;
+                                                                } else {
+                                                                    break; // Menghentikan iterasi jika poin mahasiswa tidak cukup untuk badge berikutnya
+                                                                }
+                                                            }
+
+                                                            if ($selectedBadge !== null) {
+                                                                echo '<img src="data:image/png;base64,' . base64_encode($selectedBadge['badges']) . '" width="100">';
+                                                            } else {
+                                                                echo 'Tidak ada badge';
+                                                            }
+                                                            ?>
                                                         </center>
-                                                    </li>
+                                                    </li> -->
                                                 </ul>
                                             </div>
                                         </div>
@@ -138,7 +262,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="/Mahasiswa/update_Mhs/<?= $m['id']; ?>" method="post" enctype="multipart/form-data">
+                    <form action="/User/update_Mhs/<?= $m['id']; ?>" method="post" enctype="multipart/form-data">
                         <div class="form-group ">
                             <label for="id" class="col-form-label"></label>
                             <div class="col-sm-10">
@@ -161,12 +285,6 @@
                             <label for="point" class="col-form-label">Point</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="point" name="point" value="<?php echo $m['point'] ?>" readonly>
-                            </div>
-                        </div>
-                        <div class="form-group ">
-                            <label for="" class="col-form-label">Level</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="" name="" value="">
                             </div>
                         </div>
                 </div>

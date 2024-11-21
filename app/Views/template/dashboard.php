@@ -35,6 +35,39 @@
         .swal2-popup {
             font-size: 1.6rem !important;
         }
+
+        #legend {
+            display: flex;
+            /* Gunakan flexbox untuk mengatur elemen secara horizontal */
+            flex-wrap: wrap;
+            /* Pindah ke baris baru jika konten tidak cukup */
+            gap: 10px;
+            /* Jarak antar item dalam legend */
+            justify-content: center;
+            /* Pusatkan konten secara horizontal */
+            align-items: center;
+            /* Pusatkan konten secara vertikal */
+            border: 1px solid #ccc;
+            /* Tambahkan border jika diperlukan */
+            padding: 10px;
+            /* Atur padding jika diperlukan */
+        }
+
+        .legend-item {
+            display: flex;
+            /* Gunakan flexbox untuk mengatur elemen secara horizontal */
+            align-items: center;
+            /* Pusatkan konten secara vertikal */
+        }
+
+        .legend-color {
+            width: 20px;
+            /* Atur lebar warna */
+            height: 10px;
+            /* Atur tinggi warna */
+            margin-right: 5px;
+            /* Jarak antara warna dan teks */
+        }
     </style>
     </script>
 </head>
@@ -119,6 +152,8 @@
     <script src="<?= base_url() ?>/sweetalert2/package/dist/sweetalert2.all.js"></script>
     <script src="<?= base_url() ?>/js/script.js"></script>
     <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
 
 
     <script>
@@ -128,7 +163,7 @@
                 title: 'Berhasil',
                 text: '<?= session("sukses") ?>',
                 showConfirmButton: false,
-                timer: 1500
+                timer: 1300
             })
         <?php endif; ?>
 
@@ -164,26 +199,26 @@
             })
         })
 
-        $(document).on('click', '.btn-beli', function(e) {
-            e.preventDefault();
-            const href = $(this).attr('href');
+        // $(document).on('click', '.btn-beli', function(e) {
+        //     e.preventDefault();
+        //     const href = $(this).attr('href');
 
-            Swal.fire({
-                title: 'Beli ?',
-                text: "Apakah Anda Yakin Ingin Membeli Item !",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Beli',
-                cancelButtonText: 'Batal',
+        //     Swal.fire({
+        //         title: 'Beli ?',
+        //         text: "Apakah Anda Yakin Ingin Membeli Item !",
+        //         icon: 'warning',
+        //         showCancelButton: true,
+        //         confirmButtonColor: '#3085d6',
+        //         cancelButtonColor: '#d33',
+        //         confirmButtonText: 'Beli',
+        //         cancelButtonText: 'Batal',
 
-            }).then((result) => {
-                if (result.value) {
-                    document.location.href = href;
-                }
-            })
-        })
+        //     }).then((result) => {
+        //         if (result.value) {
+        //             document.location.href = href;
+        //         }
+        //     })
+        // })
 
         // let scanner = new Instascan.Scanner({
         // video: document.getElementById('preview')

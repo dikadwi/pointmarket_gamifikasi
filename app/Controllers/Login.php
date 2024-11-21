@@ -46,16 +46,18 @@ class Login extends BaseController
     public function process()
     {
         // Ambil data dari form login
-        $npm = $this->request->getPost('npm');
+        $npmOrUsername = $this->request->getPost('npm_or_username');
         $password = $this->request->getPost('password');
 
         // Inisialisasi model Mahasiswa
         $mahasiswaModel = new MahasiswaModel();
 
         // Cari mahasiswa berdasarkan email
-        $mahasiswa = $mahasiswaModel->where('npm', $npm)->first();
+        $mahasiswa = $mahasiswaModel->where('npm', $npmOrUsername)
+            ->orWhere('nama', $npmOrUsername)
+            ->first();
 
-        // Jika mahasiswa ditemukan
+        // Jika mahasiswa dengan npm ditemukan 
         if ($mahasiswa) {
             // Verifikasi password
             if (password_verify($password, $mahasiswa['password'])) {
@@ -70,12 +72,10 @@ class Login extends BaseController
                 $session->set('email', $mahasiswa['email']);
                 $session->set('point', $mahasiswa['point']);
 
-                // Redirect ke halaman setelah login
-                return redirect()->to('/');
+                return redirect()->to('/Role_User');
             }
         }
-        // Jika login gagal, kembalikan ke halaman login dengan pesan error
-        return redirect()->to('/loginMhs')->with('error', 'Login failed. Invalid NPM or password.');
+        return redirect()->back()->with('error', 'Login failed. Invalid NPM or password.');
     }
 
 
@@ -86,5 +86,14 @@ class Login extends BaseController
         $session->remove('user_id');
 
         return redirect()->to('/loginMhs');
+    }
+
+    public function logout()
+    {
+        $session = session();
+        $session->remove('isLoggedIn');
+        $session->remove('user_id');
+
+        return redirect()->to('/login');
     }
 }

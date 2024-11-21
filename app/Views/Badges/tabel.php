@@ -26,10 +26,15 @@
                 </td>
                 <td>
                     <button type=" button" class="btn btn-info" data-toggle="modal" data-target="#modalDetail<?php echo $b['id_badges']; ?>">Detail</button>
-                    <?php if (in_groups('admin')) : ?>
+                </td>
+                <?php if (in_groups('admin')) : ?>
+                    <td>
                         <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modalEdit<?php echo $b['id_badges']; ?>">Edit</button>
-                        <a href="/Transaksi/hapus_badges/<?= $b['id_badges']; ?>" class="btn btn-danger btn-hapus">Hapus</a>
-                    <?php endif; ?>
+                    </td>
+                    <td>
+                        <a href="/Badges/delete/<?= $b['id_badges']; ?>" class="btn btn-danger btn-hapus">Hapus</a>
+                    </td>
+                <?php endif; ?>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -104,7 +109,7 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="/Transaksi/update_badges/<?= $b['id_badges']; ?>" method="post" enctype="multipart/form-data">
+                    <form action="/Badges/update_badges/<?= $b['id_badges']; ?>" method="post" enctype="multipart/form-data">
                         <div class="form-group ">
                             <label for="id" class="col-form-label"></label>
                             <div class="col-sm-10">
