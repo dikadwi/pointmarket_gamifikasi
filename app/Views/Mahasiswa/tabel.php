@@ -31,7 +31,7 @@
                 <td><?= $i++; ?></td>
                 <td><?= $m['nama']; ?></td>
                 <td><?= $m['npm']; ?></td>
-                <td>-</td>
+                <td><?= $m['gaya_belajar']; ?></td>
                 <td><?= $m['point']; ?></td>
                 <td><?= isset($reward[$m['npm']]) ? $reward[$m['npm']] : 0; ?> </td>
                 <td><?= isset($pembelian[$m['npm']]) ? $pembelian[$m['npm']] : 0; ?></td>
