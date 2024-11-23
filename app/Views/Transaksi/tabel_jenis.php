@@ -39,6 +39,7 @@
     </tbody>
 </table>
 
+
 <!-- Modal box Detail -->
 <?php foreach ($transaksi as $t) : ?>
     <div class="modal fade" id="modalDetail<?php echo $t['id_transaksi']; ?>">

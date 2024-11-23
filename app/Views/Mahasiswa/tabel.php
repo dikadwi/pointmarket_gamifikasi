@@ -122,7 +122,7 @@
                                                     </li>
                                                     <h5 class="card-title"><b>Gaya Belajar :</b></h5>
                                                     <li class="list-group-item">
-                                                        <h4>-</h4>
+                                                        <h4><?= $m['gaya_belajar']; ?></h4>
                                                     </li>
                                                     <h5 class="card-title"><b>Point :</b></h5>
                                                     <li class="list-group-item">
@@ -279,6 +279,12 @@
                             <label for="npm" class="col-form-label">NPM</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="npm" name="npm" value="<?php echo $m['npm'] ?>" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')">
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="gaya_belajar" class="col-form-label">Gaya Belajar</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="gaya_belajar" name="gaya_belajar" value="<?php echo $m['gaya_belajar'] ?>" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')">
                             </div>
                         </div>
                         <div class="form-group ">
