@@ -129,6 +129,7 @@ $routes->group('Admin', ['filter' => 'login'], function ($routes) {
     $routes->post('update_data/(:num)', 'Admin::update_data/$1', ['filter' => 'role:admin']);
     //Routes Untuk Menjalankan Perintah Get (Hapus Data di Controller Perkir)
     $routes->get('hapus_data/(:num)', 'Admin::hapus_data/$1', ['filter' => 'role:admin']);
+    $routes->get('market_place', 'Market_Place::market');
 });
 
 // $routes->get('notification', 'Message::showSweet');
