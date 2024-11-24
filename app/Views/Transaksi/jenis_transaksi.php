@@ -27,33 +27,28 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Tambah Jenis Transaksi</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Tambah <?= $title; ?></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form action="/Transaksi/save_transaksi" method="post" enctype="multipart/form-data">
-                    <div class="form-group ">
-                        <label for="id_transaksi" class="col-form-label"></label>
-                        <div class="col-sm-10">
-                            <input type="hidden" class="form-control" id="id_transaksi" name="id_transaksi" required>
-                        </div>
-                    </div>
+                    <?= csrf_field() ?>
 
                     <!-- Bagian Jenis Transaksi -->
                     <div class="form-group">
-                        <label for="jenis_transaksi" class="col-form-label">Jenis Transaksi</label>
+                        <label for="kode_jenis" class="col-form-label">Jenis Transaksi</label>
                         <div class="col-sm-10">
-                            <select name="jenis_transaksi" id="jenis_transaksi" class="form-control" required oninvalid="this.setCustomValidity('Pilih Salah Satu')" oninput="setCustomValidity('')">
-                                <option value="">Pilih Jenis Transaksi</option>
-                                <!-- Populate jenis transaksi options -->
-                                <?php foreach ($jenis_transaksi as $jenis) : ?>
-                                    <option value="<?= $jenis['kode_jenis'] ?>"><?= $jenis['nama_jenistransaksi'] ?> (<?= $jenis['kode_jenis'] ?>)</option>
-                                <?php endforeach; ?>
+                            <select name="kode_jenis" id="kode_jenis" class="form-control" required disabled>
+                                <option value="101" <?php if ($title == 'Reward') echo 'selected'; ?>>Reward</option>
+                                <option value="102" <?php if ($title == 'Pembelian') echo 'selected'; ?>>Pembelian</option>
+                                <option value="103" <?php if ($title == 'Punishment') echo 'selected'; ?>>Punishment</option>
+                                <option value="104" <?php if ($title == 'Misi Tambahan') echo 'selected'; ?>>Misi Tambahan</option>
                             </select>
                         </div>
                     </div>
+
                     <!-- Bagian Nama Transaksi -->
                     <div class="form-group">
                         <label for="nama_transaksi" class="col-form-label">Nama Transaksi</label>
@@ -78,7 +73,7 @@
                     <div class="form-group ">
                         <label for="poin_digunakan" class="col-form-label">Point Harga</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="poin_digunakan" name="poin_digunakan">
+                            <input type="number" class="form-control" id="poin_digunakan" name="poin_digunakan">
                         </div>
                     </div>
             </div>

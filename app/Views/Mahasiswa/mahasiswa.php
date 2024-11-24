@@ -21,6 +21,7 @@
                 </div>
             </div>
     </section>
+
 </div>
 
 <!--Data Modal Box Tambah Data-->
@@ -80,7 +81,6 @@
                             <input type="text" class="form-control" id="badges" name="badges" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
                         </div>
                     </div> -->
-
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary">Tambah</button>

@@ -87,4 +87,22 @@ class TransaksiModel extends Model
 
         return null; // Jika tidak ditemukan
     }
+
+    public function getNextNomorUrut($kode_jenis)
+    {
+        // Cari transaksi terakhir dengan kode jenis yang sama
+        $lastTransaksi = $this->where('kode_jenis', $kode_jenis)
+            ->orderBy('id_transaksi', 'DESC')
+            ->first();
+
+        if ($lastTransaksi) {
+            // Ambil bagian nomor urut dari ID transaksi terakhir
+            $lastNomorUrut = (int)substr($lastTransaksi->id_transaksi, -2);
+            $nextNomorUrut = $lastNomorUrut + 1;
+        } else {
+            $nextNomorUrut = 1;
+        }
+
+        return $nextNomorUrut;
+    }
 }

@@ -241,6 +241,7 @@ class Transaksi extends BaseController
         return view('Transaksi/data_misitambah', $data);
     }
 
+
     //Save data jenis_transaksi
     public function save_transaksi()
     {
@@ -250,13 +251,21 @@ class Transaksi extends BaseController
             return redirect()->back()->withInput()->with("gagal", "Data Sudah Ada !");
         }
 
+        $id_transaksi = $this->request->getVar('id_transaksi');
         $kode_jenis = $this->request->getVar('kode_jenis');
         $nama = $this->request->getVar('nama_transaksi');
         $detail = $this->request->getVar('detail');
         $keterangan = $this->request->getVar('keterangan');
         $point = $this->request->getVar('poin_digunakan');
 
+        // Mendapatkan nomor urut transaksi untuk kode jenis yang dipilih
+        $nomorUrut = $this->TransaksiModel->getNextNomorUrut($kode_jenis);
+
+        // Generate ID transaksi dengan format kodeJenis + nomorUrut
+        $id_transaksi = $kode_jenis . str_pad($nomorUrut, 2, '0', STR_PAD_LEFT);
+
         $data = [
+            'id_transaksi' => $id_transaksi,
             'kode_jenis' => $kode_jenis,
             'nama_transaksi' => $nama,
             'detail' => $detail,
