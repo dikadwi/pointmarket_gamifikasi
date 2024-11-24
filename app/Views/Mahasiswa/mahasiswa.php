@@ -60,7 +60,12 @@
                         <!-- <label for="npm" class="col-form-label">NPM</label> -->
                         <label for="gaya_belajar" class="col-form-label">Gaya Belajar</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="gaya_belajar" name="gaya_belajar" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')" oninput="setCustomValidity('')">
+                            <select name="gaya_belajar" id="gaya_belajar" class="form-control" required oninvalid="this.setCustomValidity('Pilih Salah Satu')" oninput="setCustomValidity('')">
+                                <option value="">Pilih</option>
+                                <?php foreach ($gaya_belajar as $g) : ?>
+                                    <option value="<?= $g['gaya_belajar'] ?>"><?= $g['id'] ?> - <?= $g['gaya_belajar'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                     </div>
                     <!-- <div class="form-group ">

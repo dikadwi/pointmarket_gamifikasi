@@ -6,6 +6,7 @@ use App\Models\BadgesModel;
 use App\Models\JenisTransaksiModel;
 use App\Models\MahasiswaModel;
 use App\Models\DataTransaksiModel;
+use App\Models\GayaBelajarModel;
 
 class User extends BaseController
 {
@@ -13,6 +14,7 @@ class User extends BaseController
     protected $BadgesModel;
     protected $JenisTransaksiModel;
     protected $DataTransaksiModel;
+    protected $GayaBelajarModel;
 
     public function __construct()
     {
@@ -20,6 +22,7 @@ class User extends BaseController
         $this->MahasiswaModel = new MahasiswaModel();
         $this->JenisTransaksiModel = new JenisTransaksiModel();
         $this->DataTransaksiModel = new DataTransaksiModel();
+        $this->GayaBelajarModel = new GayaBelajarModel();
     }
 
     public function Index()
@@ -35,6 +38,7 @@ class User extends BaseController
             'badges' => $this->BadgesModel->getBadges(),
             'jenis_transaksi' => $this->JenisTransaksiModel->getJenis(),
             'npmList' => $npmList,
+            'gaya_belajar' => $this->GayaBelajarModel->getGaya(),
         ];
 
         foreach ($npmList as $npm) {
@@ -71,12 +75,14 @@ class User extends BaseController
         $id = $this->request->getPost('id');
         $nama = $this->request->getPost('nama');
         $npm = $this->request->getPost('npm');
+        $gaya_belajar = $this->request->getPost('gaya_belajar');
         $password = '12345678';
 
         $data = [
             'id' => $id,
             'nama' => $nama,
             'npm' => $npm,
+            'gaya_belajar' => $gaya_belajar,
             'point' => 30,
             'password' => password_hash($password, PASSWORD_DEFAULT),
         ];

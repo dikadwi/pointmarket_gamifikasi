@@ -93,6 +93,7 @@
         <!-- Footer -->
         <?= $this->include('template/footer'); ?>
         <!-- /.Footer -->
+
         <!-- Control Sidebar -->
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
