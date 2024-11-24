@@ -90,15 +90,21 @@ class TransaksiModel extends Model
 
     public function getNextNomorUrut($kode_jenis)
     {
-        // Cari transaksi terakhir dengan kode jenis yang sama
         $lastTransaksi = $this->where('kode_jenis', $kode_jenis)
             ->orderBy('id_transaksi', 'DESC')
             ->first();
 
         if ($lastTransaksi) {
-            // Ambil bagian nomor urut dari ID transaksi terakhir
-            $lastNomorUrut = (int)substr($lastTransaksi->id_transaksi, -2);
-            $nextNomorUrut = $lastNomorUrut + 1;
+            // Ensure $lastTransaksi is an object before accessing its properties
+            if (is_object($lastTransaksi)) {
+                $lastNomorUrut = (int)substr($lastTransaksi->id_transaksi, -2);
+                $nextNomorUrut = $lastNomorUrut + 1;
+            } else {
+                // Handle the case where $lastTransaksi is an array or null
+                // For example, log an error or return a default value
+                log_message('error', 'Unexpected result from query: ' . print_r($lastTransaksi, true));
+                return 1; // Or handle the error differently
+            }
         } else {
             $nextNomorUrut = 1;
         }

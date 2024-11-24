@@ -246,7 +246,8 @@ class Transaksi extends BaseController
     public function save_transaksi()
     {
         if (!$this->validate([
-            'nama_transaksi' => 'required|is_unique[transaksi.nama_transaksi]'
+            'nama_transaksi' => 'required|is_unique[transaksi.nama_transaksi]',
+            'id_transaksi' => 'required|is_unique[transaksi.id_transaksi]'
         ])) {
             return redirect()->back()->withInput()->with("gagal", "Data Sudah Ada !");
         }
@@ -258,10 +259,8 @@ class Transaksi extends BaseController
         $keterangan = $this->request->getVar('keterangan');
         $point = $this->request->getVar('poin_digunakan');
 
-        // Mendapatkan nomor urut transaksi untuk kode jenis yang dipilih
+        // Generate ID transaksi
         $nomorUrut = $this->TransaksiModel->getNextNomorUrut($kode_jenis);
-
-        // Generate ID transaksi dengan format kodeJenis + nomorUrut
         $id_transaksi = $kode_jenis . str_pad($nomorUrut, 2, '0', STR_PAD_LEFT);
 
         $data = [
@@ -347,13 +346,13 @@ class Transaksi extends BaseController
     // Update data jenis transaksi
     public function update_transaksi($id_transaksi)
     {
-        $nama = $this->request->getPost('nama');
+        $nama = $this->request->getPost('nama_transaksi');
         $detail = $this->request->getPost('detail');
         $keterangan = $this->request->getPost('keterangan');
         $poin_digunakan = $this->request->getPost('poin_digunakan');
 
         $data = [
-            'nama' => $nama,
+            'nama_transaksi' => $nama,
             'detail' => $detail,
             'keterangan' => $keterangan,
             'poin_digunakan' => $poin_digunakan

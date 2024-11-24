@@ -34,17 +34,22 @@
             </div>
             <div class="modal-body">
                 <form action="/Transaksi/save_transaksi" method="post" enctype="multipart/form-data">
-                    <?= csrf_field() ?>
+                    <div class="form-group ">
+                        <label for="id_transaksi" class="col-form-label"></label>
+                        <div class="col-sm-10">
+                            <input type="hidden" class="form-control" id="id_transaksi" name="id_transaksi" required>
+                        </div>
+                    </div>
 
                     <!-- Bagian Jenis Transaksi -->
                     <div class="form-group">
                         <label for="kode_jenis" class="col-form-label">Jenis Transaksi</label>
                         <div class="col-sm-10">
-                            <select name="kode_jenis" id="kode_jenis" class="form-control" required disabled>
+                            <select name="kode_jenis" id="kode_jenis" class="form-control" required>
                                 <option value="101" <?php if ($title == 'Reward') echo 'selected'; ?>>Reward</option>
                                 <option value="102" <?php if ($title == 'Pembelian') echo 'selected'; ?>>Pembelian</option>
                                 <option value="103" <?php if ($title == 'Punishment') echo 'selected'; ?>>Punishment</option>
-                                <option value="104" <?php if ($title == 'Misi Tambahan') echo 'selected'; ?>>Misi Tambahan</option>
+                                <option value="105" <?php if ($title == 'Misi Tambahan') echo 'selected'; ?>>Misi Tambahan</option>
                             </select>
                         </div>
                     </div>

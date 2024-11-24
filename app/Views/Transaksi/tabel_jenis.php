@@ -113,9 +113,9 @@
                             </div>
                         </div>
                         <div class="form-group ">
-                            <label for="nama" class="col-form-label">Nama</label>
+                            <label for="nama_transaksi" class="col-form-label">Nama</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $t['nama_transaksi'] ?>" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')">
+                                <input type="text" class="form-control" id="nama_transaksi" name="nama_transaksi" value="<?php echo $t['nama_transaksi'] ?>" required oninvalid="this.setCustomValidity('Data Tidak Boleh Kosong')">
                             </div>
                         </div>
                         <div class="form-group ">
