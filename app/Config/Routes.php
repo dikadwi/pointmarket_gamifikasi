@@ -29,25 +29,22 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-// $routes->get('/', 'Login::index');
 
-
-
-
-$routes->get('Login/detail', 'Login::detail');
-
-$routes->get('registerMhs', 'Register::registerMhs');
-$routes->post('Register/add', 'Register::add');
-
+//Menampilkan Halaman Login 
 $routes->get('/', 'Admin::index',  ['filter' => 'login']);
 
-// //Menampilkan Halaman Login Admin
 $routes->get('login', 'Login::index');
+$routes->get('Login/detail', 'Login::detail');
+
+$routes->post('Register/add', 'Register::add');
+
 // $routes->get('logout', 'Login::logout');
 
 // //Menampilkan Halaman Login Admin
 $routes->get('loginMhs', 'Login::loginMhs');
 $routes->post('Login/process', 'Login::process');
+
+$routes->get('registerMhs', 'Register::registerMhs');
 $routes->get('logoutM', 'Login::logoutM');
 // //Menampilkan halaman Register
 // $routes->get('register', 'Register::index');
