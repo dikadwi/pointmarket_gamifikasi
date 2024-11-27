@@ -8,7 +8,7 @@
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalTambahMahasiswa">Input</button>
         <h3>
             <!-- <center>Data Mahasiswa<center> -->
-            <center>Data User Data baru(Mahasiswa)<center>
+            <center>Data User (Data Mahasiswa)<center>
         </h3>
     </div>
 
