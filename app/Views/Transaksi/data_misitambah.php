@@ -18,7 +18,7 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-sm-12">
-                    <?= $this->include('transaksi/tabel_misitambah'); ?>
+                    <?= $this->include('Transaksi/tabel_misitambah'); ?>
                 </div>
             </div>
     </section>

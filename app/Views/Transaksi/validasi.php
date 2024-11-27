@@ -17,7 +17,7 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-sm-12">
-                    <?= $this->include('transaksi/tabel_validasi'); ?>
+                    <?= $this->include('Transaksi/tabel_validasi'); ?>
                 </div>
             </div>
     </section>

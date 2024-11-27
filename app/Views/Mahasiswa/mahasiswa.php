@@ -17,7 +17,10 @@
             <!-- Small boxes (Stat box) -->
             <div class="row">
                 <div class="col-sm-12">
-                    <?= $this->include('mahasiswa/tabel'); ?>
+                    <?= $this->include('Mahasiswa/tabel'); ?>
+                </div>
+                <div class="col-sm-12">
+                    <center>Test Data (Mahasiswa)<center>
                 </div>
             </div>
     </section>
